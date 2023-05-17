@@ -1,0 +1,36 @@
+8.2 Equivalente. Por padrão, a variável seria inicializada com 0. portanto a alteração não faz diferença.
+
+Código mutado: this.ultimo = this.primeiro;
+
+8.3 Equivalente. Como, por padrão, a variável seria inicializada com 0 e como 0 é o valor atribuido a
+this.primeiro, não haverá nenhuma alteração no resultado.
+
+Código mutado: this.primeiro = 0;
+
+12.1 Não equivalente. Se >= for substituído por >, o programa tentará colocar o elemento em uma posição
+inexistente quando tentar armazenar em item[1000]. Isso vai retornar uma exceção diferente da especificada na
+condicional.
+
+Código mutado: if (this.ultimo > this.item.length)
+
+12.3 Não equivalente. Se o programa nunca passar pela condicional, o código tentará colocar elementos quando
+a fila já estiver cheio e gerará uma exceção diferente da especificada na condicional.
+
+Código mutado: if (false)
+
+13.1 Não equivalente. O programa funcionará corretamente, porém não haverá aviso algum quando o
+código não armazenar o elemento na lista por ela estar cheia.
+
+Código mutado: o Thrown Exception foi removido
+
+20.4 Não equivalente. O for será executado até que tente acessar um local inválido da lista e ocorrerá uma exceção.
+
+Código mutado: for (int aux = this.primeiro; false; aux++)
+
+21.1 Equivalente. A mensagem impressa estará diferente da do código original, mas o return do método será o mesmo.
+
+Código mutado: System.out.println (this.item[aux]);
+
+21.2 Equivalente. A mensagem não será impressa, mas o return do método permanecerá o mesmo.
+
+Código mutado: O trecho System.out.println(this.item[aux]); foi removido

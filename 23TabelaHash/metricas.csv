@@ -1,0 +1,17 @@
+Nr. NCSS CCN JVDC Function
+  1    4   1    0 ds.TabelaHash.Celula.Celula(String,Object)
+  2    3   1    0 ds.TabelaHash.Celula.equals(Object)
+  3    2   1    0 ds.TabelaHash.Celula.toString()
+  4    6   2    0 ds.TabelaHash.geraPesos(int)
+  5    5   2    0 ds.TabelaHash.h(String,String[])
+  6    8   2    0 ds.TabelaHash.TabelaHash()
+  7   10   7    0 ds.TabelaHash.pesquisaIndice(String)
+  8    6   3    0 ds.TabelaHash.pesquisa(String)
+  9   13   6    0 ds.TabelaHash.insere(String,Object)
+ 10    7   2    0 ds.TabelaHash.retira(String)
+ 11   11   7    0 ds.TabelaHash.recuperaItens()
+ 12    4   4    0 ds.TabelaHash.imprime()
+Average Function NCSS:       6.58
+Average Function CCN:        3.17
+Average Function JVDC:       0.00
+Program NCSS:               88.00

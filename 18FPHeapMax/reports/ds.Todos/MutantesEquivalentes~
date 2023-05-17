@@ -1,0 +1,79 @@
+7.5 Equivalente. n será inicializado com 0 de qualquer forma, pois é o valor padrão do Java.
+
+Código mutado: this.v = new Item[maxTam + 1]; this.n = 0;
+
+12.2 (Dúvida)
+
+12.5 Não equivalente. Para que seja acessado o elemento certo do array, é necessário que um seja
+somado a j dentro de this.v[].
+
+Código mutado: f ((j < dir) && (this.v[j].compara (this.v[j - 1]) < 0)) j++;
+
+13.5 Equivalente. Se >= for trocado por >, o código realizará operações redundantes nas próximas linhas,
+pois v[esq] e v[j] terão valores iguais.
+
+Código mutado: if (x.compara (this.v[j]) > 0) break;
+
+13.4 Não equivalente. Colocar sempre false na condicional fará com que o programa nunca acesse break, mesmo
+quando deveria.
+
+Código mutado: if (false) break;
+
+15.2 Não equivalente. Para o correto funcionamento do código é necessário quen j receba esq*2, não esq*3.
+
+Código mutado: esq = j; j = esq * 3;
+
+30.5 Não equivalente. Se 1 for substituído por 0, será acessado o elemento errado do array.
+
+Código mutado: maximo = this.v[1]; this.v[0] = this.v[this.n--];
+
+30.3 Não equivalente (Dúvida). É importante que 1 seja subtraído do valor de n para que seja acessado o índice
+correto em this.v[].
+
+Código mutado: maximo = this.v[1]; this.v[1] = this.v[this.n];
+
+30.5 Não equivalente. n deve ser decrementada para que o espaço certo do array seja acessado.
+
+Código mutado: maximo = this.v[1]; this.v[1] = this.v[this.n];
+
+31.2 (Dúvida)
+
+40.2 (Dúvida)
+
+47.1 (Dúvida)
+
+47.3 Não equivalente. Com false dentro da condicional, o programa nunca irá lançar a exceção, mesmo que necessário.
+
+Código mutado: if (false) throw new Exception ("Erro: heap cheio");
+
+50.2 Não equivalente. Integer.MIN_VALUE é uma constante, o mínimo valor que pode ser recebido por um inteiro. Portanto,
+não pode ser alterado.
+
+Código mutado: Substituido -2147483648 por -2147483647.
+
+50.3 (Dúvida)
+
+54.1 Não equivalente. De <= for trocado por <, o laço não fará a última iteração, em relação ao código original, não
+imprimindo toda a mensagem.
+
+Código mutado: for (int i = 1; i < this.n; i++) System.out.print (this.v[i].toString () + " ");
+
+54.6 Não equivalente. Sem a chamada a toString(), a mensagem será exibida no formato errado.
+
+Código mutado: for (int i = 1; i <= this.n; i++) System.out.print (this.v[i] + " ");
+
+54.9 (Dúvida)
+
+54.10 Não equivalente. Com false dentro da condicional, o laço for não irá executar as iterações necessárias.
+
+Código mutado: for (int i = 1; false; i++) System.out.print (this.v[i].toString () + " ");
+
+54.12 Não equivalente. Removando a chamada a print, o programa não irá imprimir a mensagem projetada no código original.
+
+Código mutado: removido o print desta linha.
+
+55.1 Não equivalente. Sem a chamada a println, o programa não irá pular a linha e imprimir a mensagem na formatação correta.
+
+Código mutado: removido o println desta linha.
+
+

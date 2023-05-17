@@ -1,0 +1,64 @@
+5.3 Não equivalente. Substituir 1 por 0 fará com que v[n] receba ele mesmo.
+
+Código mutado: if ((n % 2) > 0) { v[n] = v[n-0]; FimDoAnel = n; }
+
+5.7 Não equivalente. Colocar false na condicional fará com que o programa nunca entre neste bloco,
+mesmo que necessário.
+
+Código mutado: if (false) { v[n] = v[n-1]; FimDoAnel = n; }
+
+6.1 Não equivalente. Substituir 1 por 0 fará com que FimDoAnel receba o valor errado.
+
+Código mutado: else FimDoAnel = n-0;
+
+7.1 Equivalente. Se o programa entrar neste bloco com v[0] igual a v[1], ele realizará
+uma operação redundante, com valores iguais, mas isso não afetará em nada o resultado final.
+
+Código mutado: if (v[0] >= v[1]) { max = v[0]; min = v[1]; }
+
+8.1 Não equivalente. Se v[1] for substituido por v[0], o código estará atribuindo a max o valor errado,
+do min, no caso.
+
+Código mutado: else { max = v[0]; min = v[0]; }
+
+10.1 Não equivalente. Se uma iteração for feita quando i for igual a fim do anel, o programa tentará
+acessar um espaço inválido em v[i+1].
+
+Códigom mutado: while (i <= FimDoAnel) {
+
+11.1 Equivalente. Se o programa entrar no bloco para v[i] igual v[i+1] ele fará uma operação redundante,
+com os mesmo valores, e não alterará o resultado final.
+
+Código mutado: if (v[i] >= v[i+1]) {
+
+12.1 Equivalente. Fazer a operação quando max for igual a v[i] é redundante, mas não afetará o resultado
+final do código.
+
+Código mutado: if (v[i] >= max) max = v[i];
+
+12.3 Não equivalente. Com false na condicional, o programa nunca irá substituir max, mesmo que necessário.
+
+Código mutado: if (false) max = v[i];
+
+13.1 Equivalente. Fazer a operação quando min for igual a v[i+1] é redundante e não afetará o resultado final.
+
+Código mutado: if (v[i+1] <= min) min = v[i+1];
+
+13.8 Não equivalente. Colocar true dentro da condicional fará min ser substituído em momentos errados.
+
+Código mutado: if (true) min = v[i+1];
+
+16.1. Equivalente. Fazer a operação quando min for igual a v[i] é redundante e não afetará o resultado final.
+
+Código mutado: if (v[i] <= min) min = v[i];
+
+17.1 Equivalente. Fazer a operação quando max for igual a v[i+1] é redundante e não afetará o resultado final.
+
+Código mutado: if (v[i+1] >= max) max = v[i+1];
+
+19.1 Não equivalente. Para o funcionamento do código, i deve ser incrementado em 2, não em outro valor.
+
+Código mutado: i = i + 3;
+
+
+

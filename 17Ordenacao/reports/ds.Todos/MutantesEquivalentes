@@ -1,0 +1,61 @@
+15.1 Equivalente. Trocar <= por < causará o mesmo efeito no resultado e ainda, provavelmente o código ficará
+mais rápido. De acordo com http://www.devmedia.com.br/algoritmos-de-ordenacao-em-java/32693 na imagem
+Listagem 4. Pseudocódigo quicksort, basta somente < para o funcionamento.
+
+Código mutado: } while (p.i < p.j);
+
+15.4 Não Equivalente. Colocar true dentro do while impedirá o código de avançar. Não há como sair
+do laço. Fiquei em dúvida nesse caso porque a PIT não matou por TIME_OUT, o que eu esperaria que acontecesse.
+
+Código mutado : } while (true)
+
+20.1 Equivalente. Trocar < por <= não irá alterar o resultado final da ordenação, embora seja uma redundância
+(o código ordenará dois valores iguais).
+
+Código mutado: if (esq <= p.j) ordena (v, esq, p.j);
+
+21.1 Equivalente. Assim como em 20.1, trocar < por <= causará uma redundância no código, mas não alterará
+o resultado final.
+
+Código mutado: if (p.i <= dir) ordena (v, p.i, dir);
+
+26.3 Equivalente. Trocar 1 por 0 não vai alterar o resultado do método, apenas causará operações desnecessárias,
+visto que v[j] será comparado com ele mesmo.
+
+Código mutado: for (int j = i + 0; j <= n; j++)
+
+27.1 Equivalente. A função compara retorna 0 somente se os números comparados forem iguais. Nesse caso, min receberá
+o indíce de um elemento do mesmo valor. Isso não altera o resultado, pois ainda será obtido o valor necessário para a
+ordenação.
+
+Código mutado: if (v[j].compara (v[min]) <= 0) min = j;
+
+39.1 Não Equivalente. X será atribuído à posição errado do array.
+
+Código mutado: v[j + 0] = x;
+
+45.1 Não equivalente. Testei com n = 4. Com <=, o i do for recebe 5. Isso causará um numero diferente de iterações em relação
+ao programa original.
+
+Código mutado: do h = h * 3 + 1; while (h <= n);
+
+45.3 Não equivalente. Testei com n = 1. Semelhante a 45.1, o i do for recebe um valor maior que n, no caso 2. Isso causa
+uma diferença no número de iterações.
+
+Código mutado: do h = h * 3 + 0; while (h <= n);
+
+45.8 Não equivalente. Como sempre haverá true dentro do while, pensei que haveria um TIME_OUT da PIT aqui, pois o 
+programa nunca sairia do laço.
+
+Código mutado: do h = h * 3 + 1; while (true);
+
+50.1 Equivalente. Trocando > por >= não irá alterar o código, somente causa uma operação redundante. Quando compara retorna 0,
+significa que os valores são iguais. Logo, o programa operará o mesm o valor, não alterando em nada o resultado principal.
+
+Código mutado: while (v[j - h].compara (x) >= 0) {
+
+67.2 Não equivalente. Subsituir 1 por 0 causará resultados errados devido ao foto deste método usar explicitamente o valor 1
+em vários outros trechos que não foram alterados.
+
+Código mutado: Item x = v[1]; v[0] = v[dir]; v[dir] = x;
+

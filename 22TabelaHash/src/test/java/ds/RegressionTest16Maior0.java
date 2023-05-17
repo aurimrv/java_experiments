@@ -1,0 +1,103 @@
+package ds;
+
+import org.junit.FixMethodOrder;
+import org.junit.Test;
+import org.junit.runners.MethodSorters;
+
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+public class RegressionTest16Maior0 {
+
+  public static boolean debug = false;
+
+  @Test
+  public void test1() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest16Maior0.test1"); }
+
+
+    ds.TabelaHash tabelaHash0 = new ds.TabelaHash();
+    tabelaHash0.imprime();
+    tabelaHash0.imprime();
+    tabelaHash0.imprime();
+    tabelaHash0.insere("", (java.lang.Object)1L);
+
+  }
+
+  @Test
+  public void test2() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest16Maior0.test2"); }
+
+
+    ds.TabelaHash tabelaHash0 = new ds.TabelaHash();
+    tabelaHash0.insere("hi!", (java.lang.Object)1);
+
+  }
+
+  @Test
+  public void test3() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest16Maior0.test3"); }
+
+
+    ds.TabelaHash tabelaHash0 = new ds.TabelaHash();
+    tabelaHash0.imprime();
+    tabelaHash0.imprime();
+    java.lang.Object obj4 = tabelaHash0.pesquisa("");
+    tabelaHash0.insere("hi!", (java.lang.Object)100.0d);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNull(obj4);
+
+  }
+
+  @Test
+  public void test4() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest16Maior0.test4"); }
+
+
+    ds.TabelaHash tabelaHash0 = new ds.TabelaHash();
+    tabelaHash0.imprime();
+    tabelaHash0.insere("", (java.lang.Object)10);
+
+  }
+
+  @Test
+  public void test5() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest16Maior0.test5"); }
+
+
+    ds.TabelaHash tabelaHash0 = new ds.TabelaHash();
+    tabelaHash0.imprime();
+    tabelaHash0.imprime();
+    java.lang.Object obj4 = tabelaHash0.pesquisa("");
+    java.lang.Object obj6 = tabelaHash0.pesquisa("hi!");
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNull(obj4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNull(obj6);
+
+  }
+
+  @Test
+  public void test6() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest16Maior0.test6"); }
+
+
+    ds.TabelaHash tabelaHash0 = new ds.TabelaHash();
+    tabelaHash0.imprime();
+    tabelaHash0.imprime();
+    ds.TabelaHash tabelaHash4 = new ds.TabelaHash();
+    tabelaHash4.imprime();
+    tabelaHash0.insere("hi!", (java.lang.Object)tabelaHash4);
+    tabelaHash0.insere("", (java.lang.Object)'4');
+    tabelaHash0.insere("hi!", (java.lang.Object)1);
+
+  }
+
+}

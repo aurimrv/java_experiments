@@ -1,0 +1,47 @@
+8.1 Equivalente. O programa é feito para funcionar com qualquer valor.
+
+Código mutado: final int maxN = 11;
+
+9.1 Equivalente. O código foi feito para funcionar com um array de qualquer tamanho. Apesar
+de maxN ser 10, o resto do código usa o tamanho do array criado através do lenght, não de maxN.
+Então, o resultado continuará certo.
+
+Código mutado: this.registros = new Item[12];
+
+10.2 Equivalente. Por default, Java inicializa variáveis inteiras com 0, como no programa anterior
+à mutação.
+
+Código mutado: removida a linha 10
+
+19.4 Equivalente. Apesar de não haver mais o tratamento de exceção, o programa não irá inserir na
+tabela quando ela estiver cheia pois o código tentará acessar uma posição inválida do vetor.
+
+Código mutado: if (false)
+
+20.1 Equivalente. O código funciona normalmente sem o lançamento da mensagem de exceção. A única diferença
+será o que vai ser impresso na tela para o usuário. Como isso não afeta a análise dos testes, essa mutaçao
+é equivalente.
+
+Código mutado: Removida a linha 20
+
+28.1 Equivalente. Com a troca de > por >=, o programa irá afetar também os valores iguais. Como são o mesmo valor,
+isso não terá efeito no resultado final, somente irão ocorrer operações redundantes.
+
+Código mutado: if (chave.compara (this.registros[i]) >= 0) esq = i + 1;
+
+28.7 Não Equivalente. Se o código sempre passar pelo if e nunca pelo else, alterações importantes em dir vão deixar de
+serem feitas e esq receberá valores que não deveria. Isso compromete o resultado do método.
+
+Código mutado: if (true) esq = i + 1;
+
+30.1 Não equivalente. Com a troca de <= por <, podem haver casos em que seja feita uma iteração a menos do que o necessário.
+
+Código mutado: } while ((chave.compara (this.registros[i]) != 0) && (esq < dir));
+
+30.6 Não equivalente. Caso a comparação de equalidade seja sempre true, casos onde a iteração deveria ser interrompida vão
+passar, causando iterações a mais do que deveria para aquela entrada.
+
+Código mutado: } while (true && (esq <= dir));
+
+
+

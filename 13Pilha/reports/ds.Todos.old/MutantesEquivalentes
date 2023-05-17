@@ -1,0 +1,27 @@
+7.4 Equivalente. A variável topo é inicializada com o deafult 0, igual ao que 
+ocorre no código não mutado.
+
+Código mutado: this.item = new Object[1000];
+
+10.2 Não equivalente. O programa não retornará mais a exceção programada caso seja impossível
+empilhar algum item.
+
+Código mutado: if (false)
+
+11.1 Não equivalente. O programa não retornará mais a exceção projetada para o caso de não
+ser possível armazenar o item.
+
+Código mutado: o Thrown Exception da linha 11 foi removido.
+
+15.2 Não equivalente. Sem este trecho, o código não saberá quando retornar a exceção avisando
+que a pilha está vazia.
+
+Código mutado: removidas as linhas 15 e 16.
+
+15.3 Não equivalente. O código não irá retornar a exceção correta.
+
+Código mutado: if (false)
+
+16.1 Não equivalente. O código não irá retornar a exceção certa, já que o comando foi removido.
+
+Código mutado: o Thrown Exception da linha 16 foi removido.

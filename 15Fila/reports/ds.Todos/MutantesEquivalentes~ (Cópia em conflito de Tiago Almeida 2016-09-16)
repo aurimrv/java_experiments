@@ -1,0 +1,16 @@
+7.1 Equivalente. O código funciona para qualquer tamanho de array.
+
+Código mutado: this.item = new Object[1001];
+
+8.2 Equivalente. Por default do Java, a variável frente será inicializada com 0,
+assim como era no código original.
+
+Código mutado: removida a linha 8.
+
+9.1 Equivalente. Por dafaulta do Java, a variável trás será inicializada com 0,
+ o mesmo valor da variável frente.
+
+Código mutado: removida a linha 9.
+
+29.2 Equivalente. A remoção do println não altera o resultado da análise dos
+testes, visto que o que importa é o return do método.

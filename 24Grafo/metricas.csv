@@ -1,0 +1,14 @@
+Nr. NCSS CCN JVDC Function
+  1    9   3    0 ds.Grafo.Grafo()
+  2    2   1    0 ds.Grafo.insereAresta(int,int,int)
+  3    2   1    0 ds.Grafo.existeAresta(int,int)
+  4    5   4    0 ds.Grafo.listaAdjVazia(int)
+  5    3   1    0 ds.Grafo.primeiroListaAdj(int)
+  6    8   5    0 ds.Grafo.proxAdj(int)
+  7    7   3    0 ds.Grafo.retiraAresta(int,int)
+  8   10   4    0 ds.Grafo.imprime()
+  9    9   4    0 ds.Grafo.grafoTransposto()
+Average Function NCSS:       6.11
+Average Function CCN:        2.89
+Average Function JVDC:       0.00
+Program NCSS:               60.00

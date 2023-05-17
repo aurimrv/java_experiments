@@ -1,0 +1,157 @@
+7.1 Equivalente. O programa funciona para qualquer valor de maxChar.
+
+Código mutado: int M[] = new int[257];
+
+8.3 Equivalente. Mesmo que M[0] seja pulado, ele ainda será inicializado com 0, que é o valor padrão java.
+
+Código mutado: for (int i = 1; i < maxChar; i++) M[i] = 0;
+
+8.5 Não equivalente. M[] será inicializado com valor diferente do que era no código original.
+
+Código mutado: for (int i = 0; i < maxChar; i++) M[i] = 1;
+
+8.6 Equivalente. Mesmo que as iterações não sejam feitas, M[] será inicializado com 0, pois é o valor
+padrão java.
+
+Código mutado: for (int i = 0; i >= maxChar; i++) M[i] = 0;
+
+8.7 Equivalente. Mesmo que as iterações não sejam feitas, M[] será inicializado com 0, pois é o valo
+padrão Java.
+
+Código mutado: for (int i = 0; false; i++) M[i] = 0;
+
+10.1 (Dúvida)
+
+10.2 Não equivalente. Será usado o valor errado no trecho final desta linha, em comparação ao valor
+do código original
+
+Código mutado: M[(int)P.charAt (j)] = M[(int)P.charAt (j)] | (1 << (m-j-0));
+
+10.3 Não equivalente. Será usado o valor errado no trecho final desta linha, em comparação ao valor
+do código original
+
+Código mutado: M[(int)P.charAt (j)] = M[(int)P.charAt (j)] | (1 << (m+j-1));
+
+10.4 Não equivalente. Será usado o valor errado no trecho final desta linha, em comparação ao valor
+do código original
+
+Código mutado: M[(int)P.charAt (j)] = M[(int)P.charAt (j)] | (1 << (m-j+1));
+
+10.5 (Dúvida)
+
+10.6 (Dúvida)
+
+10.7 (Dúvida)
+
+10.8 (Dúvida)
+
+12.1 (Dúvida)
+
+12.2 Não equivalente. O valor errado será usado na operação, comparado ao código original
+
+Código mutado: int Ri =  1 << (m-0); R[0] = 0;
+
+12.4 Não equivalente. R[0] será inicializado com 1, diferente do que acontecia no código original.
+
+Código mutado: int Ri =  1 << (m-1); R[0] = 1;
+
+13.1 Não equivalente. Troca <= por < fará com que o laço não cubra o último caso, quando j tem o mesmo valor de k.
+
+Código mutado: for (int j = 1; j < k; j++) R[j] = (1 << (m-j)) | R[j-1];
+
+13.4 (Dúvida)
+
+13.5 Não equivalente. No trecho final do código será acessado o espaço errado de R[].
+
+Código mutado: for (int j = 1; j <= k; j++) R[j] = (1 << (m-j)) | R[j-0];
+
+13.6 Não equivalente. Trocando - por + em (1 << (m-j)) fará com que o código utilize o valor errado na operação.
+
+Código mutado: for (int j = 1; j <= k; j++) R[j] = (1 << (m+j)) | R[j-1];
+
+13.7 (Dúvida)
+
+13.9 (Dúvida)
+
+13.11 Não equivalente. O laço não fará todas as iterações necessárias.
+
+Código mutado: for (int j = 1; false; j++) R[j] = (1 << (m+j)) | R[j-1];
+
+14.3 Não equivalente. O laço for iŕa "pular" a iteração de i igual a 0.
+
+Código mutado: for (int i = 1; i < n; i++) {
+
+16.1 (Dúvida)
+
+16.2 (Dúvida)
+
+16.3 (Dúvida)
+
+16.4 (Dúvida)
+
+16.5 (Dúvida)
+
+18.1 Não equivalente. Trocar <= por < faz com que o for não cubra o momento onde j é igual a k.
+
+Código mutado: for (int j = 1; j < k; j++) {
+
+18.3 Não equivalente. O for fará uma iteração a mais do que necessário e utilizando um valor de j diferente
+do utilizado no original.
+
+Código mutado: for (int j = 0; j <= k; j++) {
+
+18.5 Não equivalente. O for não fará todas as iterações necessário se false for fixado em sua condicional.
+
+Código mutado: for (int j = 1; false; j++) {
+
+19.1 (Dúvida)
+
+19.2 (Dúvida)
+
+19.3 (Dúvida)
+
+19.4 (Dúvida)
+
+19.5 (Dúvida)
+
+19.6 (Dúvida)
+
+19.7 (Dúvida)
+
+19.8 (Dúvida)
+
+19.9 (Dúvida)
+
+22.1 (Dúvida)
+
+24.1 Não equivalente. Substituir 1 por 0 fará o código funcionar de maneira diferente do original.
+
+Código mutado: if ((RNovo & 0) != 0) 
+
+24.2 (Dúvida)
+
+24.3 Não equivalente. Negar a condicional fará com que a mensagem seja exibida em momentos errados.
+
+Código mutado: if ((RNovo & 1) == 0) 
+
+24.4 Não equivalente. Colocar false dentro da condicional fará com que a mensagem nunca seja exibida, mesmo que
+necessário.
+
+Código mutado: if (false)
+
+24.5 Não equivalente. Colocar true dentro da condicional fará com que a mensagem sempre seja exibida, mesmo quando
+não deveria.
+
+Código mutado if (true)
+
+25.3 Não equivalente. Removar a chamada a charAt fará com que o valor exibido no código original não o seja no mutante.
+
+Código mutado: System.out.println ("Casamento na posicao: "); 
+
+25.5 (Dúvida)
+
+25.6 Não equivalente. Removendo o println, o código não exibirá mais mensagem alguma, diferente do que ocorria no programa
+original.
+
+Código mutado: removido o println desta linha.
+

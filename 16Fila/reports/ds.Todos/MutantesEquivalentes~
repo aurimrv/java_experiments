@@ -1,0 +1,29 @@
+13.1 Equivalente. Por default, o Java inicializa variáveis de objeto com null, assim como
+ocorria no programa original.
+
+Código mutado: Removida a linha 13.
+
+19.1 Equivalente. Por default, o Java inicializa variáveis de objeto como null, assim como
+ocorria no programa original.
+
+Código mutado: Removida a linha 19.
+
+35.2 Não Equivalente. Com false no while, nada será impresso.
+
+Código mutado: while (false) {
+
+36.3 Não equuivalente. O texto impresso estará no formato errado.
+
+Código mutado: System.out.print(" " + aux.item);
+
+36.5 Não Equivalente. O texto impresso estará no formato errado.
+
+Código mutado: System.out.print(" " + aux.item);
+
+36.6 Não equivalente. A remoção desta linha fará com que nada seja impresso por este método.
+
+Código mutado: removida a linha 36.
+
+39.1 Não equivalente. Assim como em 36.6, remover a linha fará com que nada seja impresso.
+
+Código mutado: removida a linha 39.

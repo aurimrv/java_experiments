@@ -1,0 +1,161 @@
+14.3 Não equivalente. this.antecessor[0] e p[0] não serão acessados e preenchidos com os valores
+apropriados.
+
+Código mutado: for (int u = 1; u < n; u ++) {
+
+14.4 Não equivalente. Com a condicional do laço negada, não serão feitas as iterações necessárias.
+
+Código mutado: for (int u = 0; u >= n; u ++) {
+
+14.5 Não equivalente. Com false dentro da condicional do laço, não serão feitas as iterações
+necessárias.
+
+Código mutado: for (int u = 0; false; u ++) {
+
+15.1 Não equivalente (Dúvida). Talvez as demais operações do código exigem que haja -1 em this.antecessor[u]
+para funcionarem.
+
+Código mutado: this.antecessor[u] = 0;
+
+16.1 Não equivalente. p[u] Não está sendo inicializado com a constante correta.
+
+Código mutado: p[u] = 1; // @$\infty$@
+
+17.1 Não equivalente. vs[] não está sendo inicializado corretamente.
+
+Código mutado: vs[u+0] = u; // @{\it Heap indireto a ser constru\'{\i}do}@
+
+18.1 (Dúvida)
+
+20.1 Não equivalente. p[raiz] está sendo inicializado com o valor errado.
+
+Código mutado: p[raiz] = 1.0;
+
+22.1 (Dúvida)
+
+23.1 Não equivalente. Negando a condicional, o programa entrará neste bloco para as entradas opostas ao quais realmente
+deveria.
+
+Código mutado: while (heap.vazio ()) {
+
+23.3 Não equivalente. Com false dentro do while, o código nunca irá acessar este bloco, mesmo que seja necessário
+
+Código mutado: while (false) {
+
+24.1 (Dúvida)
+
+25.1 Não equivalente. Negando a condicional fará o programa entrar no bloco quando a lista for vazia.
+
+Código mutado: if (this.grafo.listaAdjVazia (u)) {
+
+25.2 (Dúvida)
+
+25.3 Não equivalente. Fixando a condicional como false fará com que o código nunca entre neste bloco, mesmo
+quando deveria.
+
+Código mutado: if (false) {
+
+25.4 Não equivalente. Fixando a condicional como true fará o código sempre entrar neste bloco, mesmo quando
+não deveria.
+
+Código mutado: if (true) {
+
+26.1 Não equivalente. adj será inicializada com o valor padrão java, ao invés do retorno de grafo.primeiroListaAdj (u).
+
+Código mutado: removida a chamada a grafo.primeiroListaAdj (u)
+
+27.1 Não equivalente. Negar a condicional fará o programa entrar no bloco nos momentos em que não deveria.
+
+Código mutado: while (adj == null) {
+
+27.2 Não equivalente. Fixar false dentro do while fará com que o código nunca entre neste bloco, mesmo quando deveria.
+
+Código mutado: while (false) {
+
+28.1 Não equivalente. v será inicializado com o valor padrão java ao invés do retorno de adj.v2().
+
+Código mutado: removida a chamada a adj.v2 ().
+
+29.1 Equivalente. Com < trocado por <= não ocorrerá mudança no resultado final da operação, porém o código fará
+uma operação redundante, com valores iguais.
+
+Código mutado: if (itensHeap[v] && (adj.peso () <= this.peso (v))) {
+
+29.2 Não equivalente. Com a primeira condição negada, o código poderá entrar neste bloco quando não deveria ou não
+entrar quando necessário.
+
+Código mutado: if (!itensHeap[v] && (adj.peso () < this.peso (v))) {
+
+29.3 Não equivalente. Assim como em 29.2, o código não operará de forma satisfatório em relação a este bloco.
+
+Código mutado: if (itensHeap[v] && (adj.peso () >= this.peso (v))) {
+
+29.4 (Dúvida)
+
+29.5 (Dúvida)
+
+29.6 Não equivalente. Com false na primeira condicional, o código nunca irá entrar neste bloco.
+
+Código mutado: if (false && (adj.peso () < this.peso (v))) {
+
+29.7 Não equivalente. Com true na primeira condicional o código poderá entrar no bloco em momentos errados.
+
+Código mutado: if (true && (adj.peso () < this.peso (v))) {
+
+29.8 Não equivalente. Com false na segunda condicional o código nunca irá entrar no bloco.
+
+Código mutado: if (itensHeap[v] && false) {
+
+29.9 Não equivalente. Com true na segunda condicional o código pode entrar no bloco em momentos errados.
+
+Código mutado: if (itensHeap[v] && true) {
+
+30.1 Não equivalente. Um valor padrão java será passado como parâmetro, ao invés de adj.peso().
+
+Código mutado: removido o parâmetro adj.peso().
+
+30.2 (Dúvida)
+
+32.1 Não equivalente. adj receberá um valor padrão java, ao invés do retorno de grafo.proxAdj(u).
+
+Código mutado: removida a chamada a grafo.proxAdj (u).
+
+37.1 (Dúvida)
+
+38.1 (Dúvida)
+
+40.3 Não equivalente. O código fará uma iteração a menos, pulará a primeira.
+
+Código mutado: for (int u = 1; u < this.p.length; u++)
+
+40.4 Não equivalente. Negar o condicional fará com que o laço não complete todas as iterações necessárias.
+
+Código mutado: for (int u = 0; u >= this.p.length; u++)
+
+40.5 Não equivalente. Fixar a condicional como false fará com que o laço não execute todas as iterações necessárias.
+
+Código mutado: for (int u = 0; false; u++)
+
+41.1 Não equivalente. Com a mudança de -1 para 0, o código passará para o bloco da condicional em momentos errados.
+
+Código mutado: if (this.antecessor[u] != 0) 
+
+41.2 Não equivalente. Negando a condicional, o código entrará no bloco if nos momentos opostos aos corretos.
+
+Código mutado: if (this.antecessor[u] == -1) 
+
+41.3 Não equivalente. Fixando false na condicional, o código nunca entrará no bloco do if.
+
+Código mutado: if (false)
+
+41.4 Não equivalente. Fixando true na condicional, o código sempre entrará no bloco if.
+
+Código mutado: if (true)
+
+42.7 Não equivalente. Removendo o println, o programa não exibirá a mensagem projetada no código original.
+
+Código mutado: removido o println desta linha.
+
+43.1 (Dúvida)
+
+43.3 (Dúvida)

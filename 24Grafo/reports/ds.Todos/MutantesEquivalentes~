@@ -1,0 +1,120 @@
+10.1 Equivalente. O programa funciona para qualquer quantidade de vértices.
+
+Código Mutado: final int  numVertices = 101;
+
+11.2 (Dúvida)
+
+12.1 Equivalente. O código funciona para qualquer quantidade de vértices.
+
+Código mutado: this.pos = new int[101];
+
+14.3 Não equivalente. this.pos[0] será inicializado com o valor padrão 0, ao invés de ser
+inicializado com -1.
+
+Código mutado: for (int i = 1; i < this.numVertices; i++) { 
+
+14.4 Não equivalente. this.pos[] será inicializado com 0 pois o for não fará todas as iterações
+necessárias.
+
+Código mutado: for (int i = 0; i >= this.numVertices; i++) {
+
+14.5 Não equivalente. this.pos[] será inicializado com 0 pois o for não fará todas as iterações
+necessárias.
+
+Código mutado: for (int i = 0; false; i++) {
+
+15.3 Equivalente.this.mat[i][0], que será "pulado" pelo for, será inicilizado com 0 padrão, igual
+acontecia no código original.
+
+Código mutado: for (int j = 1; j < this.numVertices; j++) this.mat[i][j] = 0;
+
+15.5 Equivalente. this.mat[i][j] será preenchido com o valor padrão 0, assim como ocorria no código original,
+mesmo sem o for fazer o número necessário de iterações.
+
+Código mutado: for (int j = 0; j >= this.numVertices; j++) this.mat[i][j] = 0;
+
+15.6 Equivalente. this.mat[i][j] será preenchido com o valor padrão 0, assim como ocorria no código original,
+mesmo sem o for fazer o número necessário de iterações.
+
+Código mutado: for (int j = 0; false; j++) this.mat[i][j] = 0;
+
+16.1 Não equivalente. pos[] será inicializado com o valores errado.
+
+Código mutado: this.pos[i] = 0;
+
+27.3 Não equivalente. Uma mat[v][0] não serão testados.
+
+Código mutado: for (int i = 1; i < this.numVertices; i++) 
+
+32.1 Não equivalente. pos[] será inicializado com valor diferente do valor do código original.
+
+Código mutado: this.pos[v] = 0; return this.proxAdj (v);
+
+49.1 Não equivalente. O resultado será impresso com uma formatação diferente.
+
+Código mutado: removida esta linha.
+
+50.1 Não equivalente. O código imprimirá uma linha extra.
+
+Código mutado: for (int i = 0; i <= this.numVertices; i++) 
+
+50.3 Não equivalente. O código imprimirá uma linha a menos.
+
+Código mutado: for (int i = 1; i < this.numVertices; i++) 
+
+50.4 Não equivalente. O código não fará o número necessário de iterações.
+
+Código mutado: for (int i = 0; i >= this.numVertices; i++) 
+
+50.5 Não equivalente. O código não fará o número necessário de iterações.
+
+Código mutado: for (int i = 0; false; i++)
+
+51.4 (Dúvida)
+
+51.5 Não equivalente. O código não irá imprimir o texto.
+
+Código mutado: removida esta linha.
+
+52.1 Não equivalente. O código não irá imprimir a quebra de linha.
+
+Código mutado: removida esta linha.
+
+53.3 Não equivalente. Será feita uma iteração a menos.
+
+Código mutado: for (int i = 1; i < this.numVertices; i++) { 
+
+53.4 Não equivalente. Não será feito o número total de iterações.
+
+Código mutado: for (int i = 0; i >= this.numVertices; i++) {
+
+53.5 Não equivalente. Não será feito o número total de iterações.
+
+Código mutado: for (int i = 0; false; i++) {
+
+56.4 (Dúvida)
+
+56.5 Não equivalente. Não será impressa a mensagem projetada no código original.
+
+Código mutado: removida esta linha.
+
+57.7 Não equivalente. Não será impressa a quebra de linha.
+
+Código mutado: removida esta linha.
+
+63.1 Não equivalente. Não será feito o número total de iterações. A primeira do código
+original não permaneceu no mutante.
+
+Código mutado: for (int v = 1; v < this.numVertices; v++)
+
+64.2 (Dúvida)
+
+64.4 Não equivalente. Com true dentro da condicional o código irá tomar ações como se 
+a lista nunca estivesse vazia.
+
+Código mutado: if (true) {
+
+68.1 Não equivalente. adj será inicializado com os valores padrões do java, não com o
+retorno do método.
+
+Código mutado: removida esta linha.

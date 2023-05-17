@@ -1,0 +1,35 @@
+4.1 Equivalente. O terceiro espaço do array nunca é utilizado no código.
+
+Código mutado: int maxMin[] = new int[3];
+
+5.1 Não equivalente. Trocando o alcance da condicional, fará com que o código não entre no bloco
+if em algumas entradas, o que poderá causar resultados errados.
+
+Código mutado: if (lsup - linf < 1) { 
+
+5.2 Não equivalente. É necessário que a diferença seja comparada a 1 para o funcionamento do código.
+
+Código mutado: if (lsup - linf <= 0) { 
+
+6.1 Equivalente. Trocar < por <= apenas fará com que o código realize uma operação redundante, não afetando
+os resultados do método.
+
+Código mutado: if (v[linf] <= v[lsup]) { maxMin[0] = v[lsup]; maxMin[1] = v[linf]; }
+
+13.2 Não equivalente. É necessário que haja meio + 1 para o funcionamento do código.
+
+Código mtuado: maxMin = maxMin4 (v, meio + 0, lsup);
+
+15.1 Equivalente. Trocando > por >= fará com que o código realize uma operação redundante, não afetando
+o resultado final do método.
+
+Código mutado: if (max1 >= max2) maxMin[0] = max1; else maxMin[0] = max2;
+
+15.3 Não equivalente. Para que o código funcione corretamente é necessário que seja acessado maxMin[0] neste trecho..
+
+Código mutado: if (max1 > max2) maxMin[0] = max1; else maxMin[1] = max2;
+
+16.1 Equivalente. Trocando < por <= fará com que o código realize uma operação redundante, não afetando
+o resultado final do método.
+
+Código mutado: if (min1 <= min2) maxMin[1] = min1; else maxMin[1] = min2;

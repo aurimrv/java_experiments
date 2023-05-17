@@ -1,0 +1,20 @@
+Nota: identei o código para facilitar o entendimento do report da PIT
+
+package ds;
+public class Max { 
+  public static Item max (Item v[], int n) { 
+    Item max = v[0];
+    for (int i = 1; i < n; i++)
+    	if (max.compara (v[i]) < 0) 
+    		max = v[i];
+    return max;
+  }
+}
+
+
+6.1 Equivalente. Alterar < por <= apenas irá fazer max receber o valor de v[i] se
+v[i] for igual a ele. Isso não alterará o resultado final. 
+
+Código mutado: if (max.compara (v[i] <= 0)
+
+

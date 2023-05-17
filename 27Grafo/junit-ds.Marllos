@@ -1,0 +1,216 @@
+JUnit version 4.11
+.Vertice 0:
+Vertice 1:
+Vertice 2:
+Vertice 3:
+  5 (7)
+  5 (9)
+  7 (9)
+Vertice 4:
+Vertice 5:
+  34 (9)
+  12 (7)
+Vertice 6:
+  3 (7)
+Vertice 7:
+  5 (7)
+  6 (9)
+Vertice 8:
+Vertice 9:
+Vertice 10:
+Vertice 11:
+Vertice 12:
+  4 (9)
+Vertice 13:
+Vertice 14:
+Vertice 15:
+Vertice 16:
+Vertice 17:
+Vertice 18:
+Vertice 19:
+Vertice 20:
+Vertice 21:
+Vertice 22:
+Vertice 23:
+Vertice 24:
+Vertice 25:
+Vertice 26:
+Vertice 27:
+Vertice 28:
+Vertice 29:
+Vertice 30:
+Vertice 31:
+Vertice 32:
+Vertice 33:
+Vertice 34:
+  3 (7)
+Vertice 35:
+Vertice 36:
+Vertice 37:
+Vertice 38:
+Vertice 39:
+Vertice 40:
+Vertice 41:
+Vertice 42:
+Vertice 43:
+Vertice 44:
+Vertice 45:
+Vertice 46:
+Vertice 47:
+Vertice 48:
+Vertice 49:
+Vertice 50:
+Vertice 51:
+Vertice 52:
+Vertice 53:
+Vertice 54:
+Vertice 55:
+Vertice 56:
+Vertice 57:
+Vertice 58:
+Vertice 59:
+Vertice 60:
+Vertice 61:
+Vertice 62:
+Vertice 63:
+Vertice 64:
+Vertice 65:
+Vertice 66:
+Vertice 67:
+Vertice 68:
+Vertice 69:
+Vertice 70:
+Vertice 71:
+Vertice 72:
+Vertice 73:
+Vertice 74:
+Vertice 75:
+Vertice 76:
+Vertice 77:
+Vertice 78:
+Vertice 79:
+Vertice 80:
+Vertice 81:
+Vertice 82:
+Vertice 83:
+Vertice 84:
+Vertice 85:
+Vertice 86:
+Vertice 87:
+Vertice 88:
+Vertice 89:
+Vertice 90:
+Vertice 91:
+Vertice 92:
+Vertice 93:
+Vertice 94:
+Vertice 95:
+Vertice 96:
+Vertice 97:
+Vertice 98:
+Vertice 99:
+d[0]:1 -- t[0]:2 -- antecessor[0]:-1
+d[1]:3 -- t[1]:4 -- antecessor[1]:-1
+d[2]:5 -- t[2]:6 -- antecessor[2]:-1
+d[3]:7 -- t[3]:20 -- antecessor[3]:-1
+d[4]:12 -- t[4]:13 -- antecessor[4]:12
+d[5]:8 -- t[5]:15 -- antecessor[5]:3
+d[6]:17 -- t[6]:18 -- antecessor[6]:7
+d[7]:16 -- t[7]:19 -- antecessor[7]:3
+d[8]:21 -- t[8]:22 -- antecessor[8]:-1
+d[9]:23 -- t[9]:24 -- antecessor[9]:-1
+d[10]:25 -- t[10]:26 -- antecessor[10]:-1
+d[11]:27 -- t[11]:28 -- antecessor[11]:-1
+d[12]:11 -- t[12]:14 -- antecessor[12]:5
+d[13]:29 -- t[13]:30 -- antecessor[13]:-1
+d[14]:31 -- t[14]:32 -- antecessor[14]:-1
+d[15]:33 -- t[15]:34 -- antecessor[15]:-1
+d[16]:35 -- t[16]:36 -- antecessor[16]:-1
+d[17]:37 -- t[17]:38 -- antecessor[17]:-1
+d[18]:39 -- t[18]:40 -- antecessor[18]:-1
+d[19]:41 -- t[19]:42 -- antecessor[19]:-1
+d[20]:43 -- t[20]:44 -- antecessor[20]:-1
+d[21]:45 -- t[21]:46 -- antecessor[21]:-1
+d[22]:47 -- t[22]:48 -- antecessor[22]:-1
+d[23]:49 -- t[23]:50 -- antecessor[23]:-1
+d[24]:51 -- t[24]:52 -- antecessor[24]:-1
+d[25]:53 -- t[25]:54 -- antecessor[25]:-1
+d[26]:55 -- t[26]:56 -- antecessor[26]:-1
+d[27]:57 -- t[27]:58 -- antecessor[27]:-1
+d[28]:59 -- t[28]:60 -- antecessor[28]:-1
+d[29]:61 -- t[29]:62 -- antecessor[29]:-1
+d[30]:63 -- t[30]:64 -- antecessor[30]:-1
+d[31]:65 -- t[31]:66 -- antecessor[31]:-1
+d[32]:67 -- t[32]:68 -- antecessor[32]:-1
+d[33]:69 -- t[33]:70 -- antecessor[33]:-1
+d[34]:9 -- t[34]:10 -- antecessor[34]:5
+d[35]:71 -- t[35]:72 -- antecessor[35]:-1
+d[36]:73 -- t[36]:74 -- antecessor[36]:-1
+d[37]:75 -- t[37]:76 -- antecessor[37]:-1
+d[38]:77 -- t[38]:78 -- antecessor[38]:-1
+d[39]:79 -- t[39]:80 -- antecessor[39]:-1
+d[40]:81 -- t[40]:82 -- antecessor[40]:-1
+d[41]:83 -- t[41]:84 -- antecessor[41]:-1
+d[42]:85 -- t[42]:86 -- antecessor[42]:-1
+d[43]:87 -- t[43]:88 -- antecessor[43]:-1
+d[44]:89 -- t[44]:90 -- antecessor[44]:-1
+d[45]:91 -- t[45]:92 -- antecessor[45]:-1
+d[46]:93 -- t[46]:94 -- antecessor[46]:-1
+d[47]:95 -- t[47]:96 -- antecessor[47]:-1
+d[48]:97 -- t[48]:98 -- antecessor[48]:-1
+d[49]:99 -- t[49]:100 -- antecessor[49]:-1
+d[50]:101 -- t[50]:102 -- antecessor[50]:-1
+d[51]:103 -- t[51]:104 -- antecessor[51]:-1
+d[52]:105 -- t[52]:106 -- antecessor[52]:-1
+d[53]:107 -- t[53]:108 -- antecessor[53]:-1
+d[54]:109 -- t[54]:110 -- antecessor[54]:-1
+d[55]:111 -- t[55]:112 -- antecessor[55]:-1
+d[56]:113 -- t[56]:114 -- antecessor[56]:-1
+d[57]:115 -- t[57]:116 -- antecessor[57]:-1
+d[58]:117 -- t[58]:118 -- antecessor[58]:-1
+d[59]:119 -- t[59]:120 -- antecessor[59]:-1
+d[60]:121 -- t[60]:122 -- antecessor[60]:-1
+d[61]:123 -- t[61]:124 -- antecessor[61]:-1
+d[62]:125 -- t[62]:126 -- antecessor[62]:-1
+d[63]:127 -- t[63]:128 -- antecessor[63]:-1
+d[64]:129 -- t[64]:130 -- antecessor[64]:-1
+d[65]:131 -- t[65]:132 -- antecessor[65]:-1
+d[66]:133 -- t[66]:134 -- antecessor[66]:-1
+d[67]:135 -- t[67]:136 -- antecessor[67]:-1
+d[68]:137 -- t[68]:138 -- antecessor[68]:-1
+d[69]:139 -- t[69]:140 -- antecessor[69]:-1
+d[70]:141 -- t[70]:142 -- antecessor[70]:-1
+d[71]:143 -- t[71]:144 -- antecessor[71]:-1
+d[72]:145 -- t[72]:146 -- antecessor[72]:-1
+d[73]:147 -- t[73]:148 -- antecessor[73]:-1
+d[74]:149 -- t[74]:150 -- antecessor[74]:-1
+d[75]:151 -- t[75]:152 -- antecessor[75]:-1
+d[76]:153 -- t[76]:154 -- antecessor[76]:-1
+d[77]:155 -- t[77]:156 -- antecessor[77]:-1
+d[78]:157 -- t[78]:158 -- antecessor[78]:-1
+d[79]:159 -- t[79]:160 -- antecessor[79]:-1
+d[80]:161 -- t[80]:162 -- antecessor[80]:-1
+d[81]:163 -- t[81]:164 -- antecessor[81]:-1
+d[82]:165 -- t[82]:166 -- antecessor[82]:-1
+d[83]:167 -- t[83]:168 -- antecessor[83]:-1
+d[84]:169 -- t[84]:170 -- antecessor[84]:-1
+d[85]:171 -- t[85]:172 -- antecessor[85]:-1
+d[86]:173 -- t[86]:174 -- antecessor[86]:-1
+d[87]:175 -- t[87]:176 -- antecessor[87]:-1
+d[88]:177 -- t[88]:178 -- antecessor[88]:-1
+d[89]:179 -- t[89]:180 -- antecessor[89]:-1
+d[90]:181 -- t[90]:182 -- antecessor[90]:-1
+d[91]:183 -- t[91]:184 -- antecessor[91]:-1
+d[92]:185 -- t[92]:186 -- antecessor[92]:-1
+d[93]:187 -- t[93]:188 -- antecessor[93]:-1
+d[94]:189 -- t[94]:190 -- antecessor[94]:-1
+d[95]:191 -- t[95]:192 -- antecessor[95]:-1
+d[96]:193 -- t[96]:194 -- antecessor[96]:-1
+d[97]:195 -- t[97]:196 -- antecessor[97]:-1
+d[98]:197 -- t[98]:198 -- antecessor[98]:-1
+d[99]:199 -- t[99]:200 -- antecessor[99]:-1
+
+Time: 0,019
+
+OK (1 test)
+

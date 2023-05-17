@@ -1,0 +1,26 @@
+8.3 Não equivalente. A variável pos não é inicializada corretamente.
+
+Código mutado: this.primeiro = new Celula ();
+
+9.2 Equivalente. A inicialização padrão do Java atribui null para a variável de objeto não
+inicializada manualmente, igual ao que havia no código antes da mutação.
+
+Código mutado: this.ultimo = this.primeiro;
+
+13.2 Equivalente. Assim como em 9.2, a variável é inicializada como null por padrão, igual
+ao que havia no código anteriormente à mutação.
+
+Codigo mutado: this.ultimo.item = x;
+
+18.2 Equivalente. Como há false dentro do while, nada será mostrado na tela, porém o return do código
+será o mesmo.
+
+Código mutado: while (false) {
+
+19.1 Equivalente. A mensagem impressa estará diferente da do código original, mas o return do método será o mesmo.
+
+Código mutado: System.out.println (aux.item); aux = aux.prox;
+
+19.2 Equivalente. Nada será exibido na tela, mas o return do método será o mesmo.
+
+Código mutado: aux = aux.prox;

@@ -1,0 +1,133 @@
+26.1 (Dúvida) Não entendi a mutação.
+
+26.4 Não equivalente. Substituindo 0 por 1, p[0] não receberá um número aleatório, mas sim
+será inicializado pelo valor 0, padrão do java. Os demais valores serão aleatórios.
+
+Código mutado: for (int i = 1; i < n; i++) p[i] = rand.nextInt(M) + 1;
+
+26.5 Equivalente. Substitundo 1 por 0 ainda gerará valores aleatórios para todo o array p[].
+
+Código mutado: for (int i = 0; i < n; i++) p[i] = rand.nextInt(M) + 0;
+
+26.6 Equivalente. Substituindo a adição por subtração ainda gerará valores aleatórios para todo o array p[].
+
+Código mutado: for (int i = 0; i < n; i++) p[i] = rand.nextInt(M) - 1;
+
+26.7 Não equivalente. Negar a condicional fará com que os valores aleatórios não sejam alocados em p[].
+
+Código mutado: for (int i = 0; i >= n; i++) p[i] = rand.nextInt(M) + 1;
+
+26.8 Não equivalente. Se a chamada da função nextInt for removida, p[] será preenchido com 1, não com
+valores aleatórios.
+
+Código mutado: for (int i = 0; i < n; i++) p[i] = 1;
+
+26.9 Não equivalente. Colocar false na verificação de parada do laço irá fazer com que ele não itere e
+consequente p[] não será devidademente preenchido.
+
+Código mutado: for (int i = 0; false; i++) p[i] = rand.nextInt(M) + 1;
+
+30.1 Não equivalente. A soma será aumentada em 1 se o valor 0 for substituído por 1.
+
+Código mutado: int soma = 1;
+
+32.3 Não equivalente. Se 0 for substituído por 1, o código fará uma iteração a menos e o 
+valor da soma será alterado.
+
+Código mutado:for (int i = 1; i < chave.length(); i++) 
+
+33.1 Não equivalente. Substituir a multiplicação dos pesos por uma divisão irá fazer com que a soma
+receba valores errados.
+
+Código mutado: soma = soma + ((int)chave.charAt (i)) / pesos[i]; 
+
+33.3 Não equivalente. Remover a chamada da função na atribuição da soma fará com que seus valores
+não sejam atualizados a cada iteração.
+
+Código mutado: soma = soma
+
+34.2 (Dúvida)
+
+38.1 Equivalente. O programa funciona para qualquer valore me m.
+
+Código mutado: int m = 8;
+
+47.2 (Dúvida)
+
+47.3 Não equivalente. Colocar false na condicional impede que o método tome a ação correta quando
+a tabela estiver realmente vazia.
+
+Código mutado: if (false) return null; // @{\it pesquisa sem sucesso}@
+
+56.2 (Dúvida)
+
+56.4 Não equivalente. Substituir por true o conteúdo da condicional impedirá que o programa avise
+quando o registro já estiver presente.
+
+Código mutado: if (true) {
+
+60.1 Não equivalente. A remoção do comando println impedirá que o programa exiba a mensagem correta
+na tela.
+
+Código mutado: removida esta linha.
+
+66.1 Não equivalente. Negar a condicional fará com que o método imprima a mensagem na tela em momentos
+errados.
+
+Código mutado: if (cel != null) System.out.println ("Registro nao esta presente"); 
+
+66.2 Não equivalente. Esta alteração fará com que a mensagem nunca seja impressa.
+
+Código mutado: if (false) System.out.println ("Registro nao esta presente");    
+
+66.3 Não equivalente. Esta alteração fará com que a mensagem sempre seja impressa, o que não é o objetivo
+do método.
+
+Código mutado: if (true) System.out.println ("Registro nao esta presente");
+
+66.4 Não equivalente. A remoção do comando println fará com que nunca seja impressa a mensagem na tela.
+
+Código mutado: removido o println desta linha
+
+70.3 Não equivalente. Se 0 for substituído por 1, o primeiro valor de table[] será ignorado.
+
+Código mutado: for (int i = 1; i < this.M; i++) {
+
+70.4 Não equivalente. Se a condicional for negada, o for não fará as iterações necessárias.
+
+Código mutado: for (int i = 0; i >= this.M; i++) {
+
+70.5 Não equivalente. Se a condicional for estabelecida como false, o for não fará as iterações
+necessárias.
+
+Código mutado: for (int i = 0; false; i++) {
+
+71.1 Não equivalente. Negar a condicional fará com o que o método imprima a entrada em momentos
+indevidos.
+
+Código mutado: if (this.tabela[i].vazia ()) {
+
+71.2 (Dúvida)
+
+71.3 Não equivalente. Estabelecer o conteúdo da condicional como false fará com que o código nunca
+execute o println.
+
+Código mutado: if (false) {
+
+71.4 Não equivalente. Estabelecer o conteúdo da condicional como true fará com que o código execute
+o println sempre, inclusive para entradas erradas.
+
+Código mutado: if (true) {
+
+72.4 (Dúvida)
+
+72.5 Não equivalente. A remoção do println fará com que nada seja impresso na tela.
+
+Código mutado: removida esta linha.
+
+73.1 Não equivalente. Ao remover a chamada a imprime(), o método não imprimirá o elemento
+da tabela.
+
+Código mutado: removida a chamada imprime()
+
+

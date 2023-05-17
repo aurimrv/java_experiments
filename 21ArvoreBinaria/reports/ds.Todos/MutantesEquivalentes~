@@ -1,0 +1,145 @@
+26.1 Equivalente. Por padrão, Java inicializa esse tipo de variável com null.
+
+Código mutado: p.dir = null;
+
+26.2 Equivalente. Por padrão, Java inicializa esse tipo de variável com null.
+
+Código mutado: p.esq = null;
+
+28.2 Equivalente. Trocar < por <= causará uma operação redundante, comparado e operando
+uma variável com outra de valor igual. Não causará mudanças no resultado final do programa.
+
+Código mutado: else if (reg.compara (p.reg) <= 0) p.esq = insere (reg, p.esq);
+
+29.2 Equivalente. Assim como em 28.2, trocar > por >= causará operações reduntantes mas não
+alterará o resultado final do método.
+
+Código mutado: else if (reg.compara (p.reg) >= 0) p.dir = insere (reg, p.dir); 
+
+29.7 Não equivalente. Trocar a operação comparativa por true altera bastante o método. Serão feitas
+operações erradas com p.dir, ignorando registros já existentes.
+
+Código mutado: else if (true) p.dir = insere (reg, p.dir)
+
+30.1 Equivalente. A remoção do println não altera o return do método, logo, não afeta o programa
+no contexto da análise de testes.
+
+Código mutado: removido o println desta linha
+
+34.1 (Dúvida)
+
+34.3 Não equivalente. Removendo a chamado pelo método fará r.dir receber valores errados e resultará
+em um return incorreto para o método.
+
+Código mutado: if (r.dir != null) r.dir = null;
+
+34.4 Não equivalente. Substituir a condicional por sempre false gerará atribuições erradas para r e isso
+afetará o return do método.
+
+Código mutado: if (false) r.dir = antecessor (q, r.dir);
+
+34.6 Não equivalente. Sem a atribuição de valor para r.dir caso ele seja diferente de null irá anular as
+chamadas recursivas que o programa deveria fazer. O r retornado pelo código conterá valores errados para r.dir.
+
+Código mutado: removida a atribuição a r.dir
+
+36.1 (Dúvida)
+
+39.4 Equivalente. E remoção do println não afeta o return do método.
+
+Código mutado: removido o println desta linha.
+
+40.5 Não equivalente. Remover a chamada do método elimina a recursividade e, consequentemente, 
+altera seu resultado final.
+
+Código mutado: removida a chamada do método retira()
+
+41.5 Não equivalente. Assim como em 40.5, remover a chamada do método elimina a recursividade, alterando
+o resultado final.
+
+Código mutado: removida a chamada do método retira()
+
+43.1 Não equivalente. Negar a condicional realiza a atribuiçao a p para valores errados. Isso afeta o return
+do código, que é o próprio p.
+
+Código mutado: if (p.dir != null) p = p.esq;
+
+43.2 Não equivalente. Fixar a condição do if como false pode fazer p não receber valores que deveria, alterando
+o seu valor final.
+
+Código mutado: if (false) p = p.esq;
+
+43.3 Não equivalente. Fixar a condição de if como true pode fazer p receber valores que não deveria, isso alterará
+seu resultado final.
+
+Código mutado: if (true) p = p.esq;
+
+44.3 Não equivalente. Fixar a condição de if como true fará p receber valores que não deveria, alterando o resultado
+final do método.
+
+Código mutado: else if (true) p = p.dir;
+
+45.3 Não equivalente. Remover a atribuição de p.esq fará o método perder parte de sua recursividade, importante
+para seu return final.
+
+Código mutado: removida a atribuição a p.esq
+
+51.1 Equivalente. Por default, o Java inicializa este tipo de variável com null, como era no programa antes de ser
+mutado.
+
+Código mutado: removida esta linha
+
+63.3 Não equivalente. Raiz será inicializada com valor diferente.
+
+Código mutado: Removida esta linha
+
+68.3 Equivalente (Dúvida). Mesmo que o fluxo do método seja alterado, seu return permanece void.
+
+Código mutado: if (true) return;
+
+69.2 Não equivalente. As linhas 70 a 72 serão inutilizadas, modificando a funcionalidade do método. Ele não
+irá mais coseguir usar o print e o System.Exit(1).
+
+Código mutado: if (false) {
+
+70.1 Equivalente. Trocar < por <= causará apenas operação redundante, operando dois valores iguais. Isso não
+alterará o resultado do código.
+
+Código mutado: if (p.reg.compara (p.esq.reg) <= 0) {  
+
+70.3 (Dúvida) Não entendi a mutação.
+
+70.4 Não equivalente. O método perderá sua possibilidade de utilizar as linhas de print e System.Exit(1).
+
+Código mutado: if (false) {
+
+75.2 Não Equivalente. As linhas 76 a 78 serão inutilizadas, modificando a funcionalidade do método. Ele não
+irá mais coseguir usar o print e o System.Exit(1).
+
+Código mutado: if (false)
+
+76.1 Equivalente. Trocar > por >= causará apenas operação redundante, operando dois valores iguais. Isso não
+alterará o resultado do código.
+
+Código mutado: if (p.reg.compara (p.dir.reg) >= 0 ) { 
+
+76.3 (Dúvida) Não entendi a mutação.
+
+76.4 Não equivalente (Dúvida). Fixar a condicioal como false alterará o fluxo do programa, excluindo sempre uma
+parte do código.
+
+Código mutado: if (false) {
+
+81.1 Não equivalente (Dúvida). Remover a chamada do método alterará a funcionalidade do programa.
+
+Código mutado: removida esta linha.
+
+82.1 Não equivalente (Dúvida). Remover a chamada do método alterará a funcionalidade do programa.
+
+Código mutado: removida esta linha.
+
+85.1 Não equivalente (Dúvida). Remover a chamada do método alterará a funcionalidade do programa.
+
+Código mutado: removida esta linha.
+
+

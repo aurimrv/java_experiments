@@ -1,0 +1,146 @@
+10.1 Não equivalente. O for tentará acessar um espaço inexistente do veto, retornando uma exceção.
+
+Código mutado: for (int i = 0; i <= n; i++)  m[i][i] = 0;
+
+10.3 Equivalente. Mesmo que i igual a 0 deixe de ser acessado pelo laço, m[0][0] será inicializado
+com o valor 0 padrão do java.
+
+Código mutado: for (int i = 1; i < n; i++)  m[i][i] = 0;
+
+10.4 Não equivalente. m[i][i] será inicializado com o valor errado.
+
+Código mutado: for (int i = 0; i < n; i++)  m[i][i] = 1;
+
+10.6 Equivalente. Mesmo que o for não seja iterado, m[i][i] será inicializado com o valor 0 padrão
+java.
+
+Código mutado: for (int i = 0; false; i++)  m[i][i] = 0;
+
+11.1 Não equivalente. O código fará uma iteração a mais, modificando o andamento das outras operações
+do bloco.
+
+Código mutado: for (int h = 1; h <= n; h++) { 
+
+11.3 Não equivalente. O código fará uma iteração a mais, com h igual 0, e modificará as operações
+do bloco.
+
+Código mutado: for (int h = 0; h < n; h++) { 
+
+14.1 Não equivalente. Deve ser subtraído 1 de i para o funcionamento do código.
+
+Código mutado: m[i-0][j-1] = Integer.MAX_VALUE;
+
+14.2 Não equivalente. Deve ser subtraído 1 de j para o funcionamento do código.
+
+Código mutado:  m[i-1][j-0] = Integer.MAX_VALUE;
+
+14.3 (Dúvida)
+
+14.4 Não equivalente. Deve ser subtraído 1 de i para o funcionamento do código.
+
+Código mutado:  m[i+1][j-1] = Integer.MAX_VALUE;
+
+15.1 Não equivalente. O código fará uma iteração a mais e retornará exceção ao tentar acessar um espaço
+inexistente dos arrays.
+
+Código mutado: for (int k = i; k <= j; k++) { 
+
+16.1 Não equivalente. É necessário que 1 seja subtraído de i para o funcionamento do código.
+
+Código mutado: int temp = m[i-0][k-1] + m[k][j-1] + d[i-1] * d[k] * d[j];
+
+16.2 Não equivalente. É necessário que 1 seja subtraído de k para o funcionamento do código.
+
+Código mutado: int temp = m[i-1][k-0] + m[k][j-1] + d[i-1] * d[k] * d[j];
+
+16.3 Não equivalente. É necessário que 1 seja subtraído de j para o funcionamento do código.
+
+Código mutado: int temp = m[i-1][k-1] + m[k][j-0] + d[i-1] * d[k] * d[j];
+
+16.4 Não equivalente. É necessário que 1 seja subtraído de i para o funcionamento do código.
+
+Código mutado: int temp = m[i-1][k-1] + m[k][j-1] + d[i-0] * d[k] * d[j];
+
+16.5 Não equivalente. É necessário que 1 seja subtraído de i para o funcionamento do código.
+
+Código mutado: int temp = m[i+1][k-1] + m[k][j-1] + d[i-1] * d[k] * d[j];
+
+16.6 Não equivalente. É necessário que 1 seja subtraído de k para o funcionamento do código.
+
+Código mutado: int temp = m[i-1][k+1] + m[k][j-1] + d[i-1] * d[k] * d[j];
+
+16.8 Não equivalente. É necessário que m[k][j-1] seja adicionado na operação para o funcionamento do código.
+
+Código mutado: int temp = m[i-1][k-1] - m[k][j-1] + d[i-1] * d[k] * d[j];
+
+16.9 Não equivalente. É necessário que 1 seja subtraído de i para o funcionamento do código.
+
+Código mutado: int temp = m[i-1][k-1] + m[k][j-1] + d[i+1] * d[k] * d[j];
+
+16.12 Não equivalente. É necessário que d[i-1] seja subtraído da operação para o funcionamento do código.
+
+Código mutado: int temp = m[i-1][k-1] + m[k][j-1] - d[i-1] * d[k] * d[j];
+
+17.1 Equivalente. Substituir < por <= causará um operação redundante mas não afetará o resutado do método.
+
+Código mutado: if (temp <= m[i-1][j-1])  m[i-1][j-1] = temp;
+
+17.2 Não equivalente. É necessário que 1 seja subtraído de i para o funcionamento do código.
+
+Código mutado: if (temp < m[i-0][j-1])  m[i-1][j-1] = temp;
+
+17.3 Não equivalente. É necessário que 1 seja subtraído de j para o funcionamento do código.
+
+Código mutado: if (temp < m[i-1][j-0])  m[i-1][j-1] = temp;
+
+17.4 Não equivalente. É necessário que 1 seja subtraído de i para o funcionamento do código.
+
+Código mutado: if (temp < m[i-1][j-1])  m[i-0][j-1] = temp;
+
+17.5 Não equivalente. É necessário que 1 seja subtraído de i para o funcionamento do código.
+
+Código mutado: if (temp < m[i-1][j-1])  m[i-1][j-0] = temp;
+
+17.6 Não equivalente. É necessário que 1 seja subtraído de i para o funcionamento do código.
+
+Código mutado: if (temp < m[i+1][j-1])  m[i-1][j-1] = temp;
+
+17.8 Não equivalente. É necessário que 1 seja subtraído de i para o funcionamento do código.
+
+Código mutado: if (temp < m[i-1][j-1])  m[i+1][j-1] = temp;
+
+17.10 Não equivalente. Negando a condicional, o código irá trabalhar de forma oposta à correta, deixando
+entrar no bloco do if casos que não deveriam.
+
+Código mutado: if (temp >= m[i-1][j-1])  m[i+1][j-1] = temp;
+
+17.11 Não equivalente. Com false dentro do if, o código nunca entrará neste bloco, mesmo que necessário.
+
+Código mutado: if (false)  m[i+1][j-1] = temp;
+
+17.12 Não equivalente. Com true dentro do if, o código sempre entrará neste bloco, mesmo em momentos errados.
+
+Código mutado: if (true)  m[i+1][j-1] = temp;
+
+19.2 Não equivalente. É necessário que 1 seja subtraído de i para que o valor correto seja impresso na mensagem.
+
+Código mutado: System.out.print(" m[" +i+"]["+j+"]= "+ m[i-0][j-1]);
+
+19.3 Não equivalente. É necessário que 1 seja subtraído de i para que o valor correto seja impresso na mensagem.
+
+Código mutado: System.out.print(" m[" +i+"]["+j+"]= "+ m[i-1][j-0]);
+
+19.4 Não equivalente. É necessário que 1 seja subtraído de i para que o valor correto seja impresso na mensagem.
+
+Código mutado: System.out.print(" m[" +i+"]["+j+"]= "+ m[i+1][j-1]);
+
+19.12 (Dúvida)
+
+19.13 Não equivalente. A mensagem não será exibida com a remoção do print.
+
+Código mutado: removido o print desta linha.
+
+21.1 Não equivalente. A mensagem deste método será impressa sem a formatação original ao ser retirado esse println,
+responsável pela quebra de linha.
+
+Còdigo mutado: removido o printn desta linha.

@@ -1,0 +1,35 @@
+Nota: O programa foi identado para facilitar o entendimento das mutações
+
+package ds;
+public class MaxMin2 {
+  public static int [] maxMin2 (int v[], int n) {
+    int max = v[0], min = v[0]; 
+    for (int i = 1; i < n; i++) {
+      if (v[i] > max)
+    	  max = v[i];
+      else
+    	  if (v[i] < min) 
+    		  min = v[i];
+    }
+    int maxMin[] = new int[2]; 
+    maxMin[0] = max; 
+    maxMin[1] = min;
+    return maxMin;
+  }
+}
+
+
+5.3 Equivalente. Substituir 1 por 0 apenas fará uma iteração a mais, comparando max e min
+com v[0], ou seja, com seu próprio valor. 
+
+Código mutado: for (int i = 0; i < n; i++){
+
+6.1 Equivalente. Substituir > por >= não irá afetar o resultado final. Max será substituido
+também se alguem for igual a ele. No fim, o valor máximo ainda será retornado.
+
+Código mutado: if (v[i] >= max)
+
+9.1 Equivalente. Substituir < por <= não irá afetar o resultado final. Min será substituido
+também se alguém for igual a ele. No fim, o valor mínimo ainda será retornado.
+
+Código mutado : if (v[i] <= min)

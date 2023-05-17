@@ -1,0 +1,302 @@
+8.5 Não equivalente. Negar esta condicional fará com que o código aceite o caso contrário ao do programa original.
+Ou seja, T.charAt (k) != P.charAt(j).
+
+Código mutado: while ((j < m) && (T.charAt (k) != P.charAt (j))) { j++; k++; }
+
+8.8 Não equivalente. Colocar false fará com que o código nunca entre no bloco while, mesmo que necessário.
+
+Código mutado: while (false && (T.charAt (k) == P.charAt (j))) { j++; k++; }
+
+8.9 Não equivalente. Colocar true na primeira condicional fará com que o código saia do bloco while ou
+continue nele em momentos errados.
+
+Código mutado: while (true && (T.charAt (k) == P.charAt (j))) { j++; k++; }
+
+8.13 Não equivalente. Remover o incremento em k fará com que esta variável assuma valores errados, atrapalhando
+na verificação do while.
+
+Código mutado: while ((j < m) && (T.charAt (k) == P.charAt (j))) { j++; }
+
+9.2 Equivalente. A condicional aceitará como true para entradas erradas, opostas ao que deveria no programa
+original. Não alterará o return.
+
+Código mutado: if (j != m) System.out.println ("Casamento na posicao: " + i);
+
+9.5 (Dúvida)
+
+9.6 Equivalente. Com false fixado na condicional, o programa nunca irá imprimir a mensagem projetada no
+código original. Não alterará o return.
+
+Código mutado: if (false) System.out.println ("Casamento na posicao: " + i);
+
+9.7 Equivalente. Com true fixado na condicional, o programa irá sempre imprimir a mensagem, mesmo em momentos
+errados. Não alterará o return.
+
+Código mutado: if (true) System.out.println ("Casamento na posicao: " + i);
+
+9.8 Equivalente. Removendo o println, o código nunca irá imprimir a mensagem projetada no programa original.
+
+Código mutado: Removido o println desta linha.
+
+13.1 Não equivalente. R será inicializada com um valor diferente do original.
+
+Código mutado: int R = 1;
+
+15.1 Equivalente. O método funciona para qualquer valor para maxChar.
+
+Código mutado: int M[] = new int[257];
+
+16.3 Equivalente. Mesmo que não seja acessado M[0] diretamente pelo for, ele ainda será inicializado com 0, pois é
+o valor padrão de inicialização do Java.
+
+Código mutado: for (int i = 1; i < maxChar; i++) M[i] = 0;  
+
+16.5 Não equivalente. O array M[] será inicializado com valor incorreto.
+
+Código mutado: for (int i = 0; i < maxChar; i++) M[i] = 1;
+
+16.6 Equivalente. A condicional do for negada faz com que o laço não execute todas as iterações necessárias. Apesar disso,
+M[] será preenchido com o valor correto, 0, já que é o valor padrão java para inicialização de variáveis.
+
+Código mutado: for (int i = 0; i >= maxChar; i++) M[i] = 0;
+
+16.7 Equivalente.  A condicional do for negada faz com que o laço não execute todas as iterações necessárias. Apesar disso,
+M[] será preenchido com o valor correto, 0, já que é o valor padrão java para inicialização de variáveis.
+
+Código mutado: for (int i = 0; false; i++) M[i] = 0;
+
+18.1 (Dúvida)
+
+18.2 (Dúvida)
+
+18.3 Não equivalente. Não se deve substituir a subtração por adição. Isso afeta o resultado final da atribuição
+a M[(int)P.charAt (j)].
+
+Código mutado: M[(int)P.charAt (j)] = M[(int)P.charAt (j)] | (1 << (m + j - 1));
+
+18.4 Não equivalente. Não se deve substituir a subtração por adição. Isso afeta o resultado final da atribuição
+a M[(int)P.charAt (j)].
+
+Código mutado: M[(int)P.charAt (j)] = M[(int)P.charAt (j)] | (1 << (m - j + 1));
+
+18.5 (Dúvida)
+
+18.6 (Dúvida)
+
+18.7 (Dúvida)
+
+18.8 (Dúvida)
+
+20.3 Não equivalente. Substituir 0 por 1 fará com que o laço não faça a primeira iteração, como no programa original.
+
+Código mutado: for (int i = 1; i < n; i++) {
+
+21.1 (Dúvida)
+
+21.2 (Dúvida)
+
+21.3 (Dúvida)
+
+21.4 (Dúvida)
+
+21.5 Não equivalente. Para o correto funcionamento do código, é fundamental que seja subtraído 1 de m.
+
+Código mutado: R = ((R >> 1) | (1 << (m + 1))) & M[(int)T.charAt (i)];
+
+21.6 (Dúvida)
+
+21.7 (Dúvida)
+
+21.8 (Dúvida)
+
+22.1 (Dúvida)
+
+22.2 (Dúvida)
+
+22.3 Equivalente. Negando a condicional, o programa funcionará de maneira oposta à correta para este bloco. Não alterará o return.
+
+Código mutado: if ((R & 1) == 0) 
+
+22.4 Equivalente. Fixando false na condicional, o código nunca irá entrar neste bloco, exibindo a mensagem projetada
+no programa original. Não alterará o return.
+
+Código mutado: if (false)
+
+22.5 Equivalente. Fixando true na condicional, o código sempre irá exibir a mensagem projetada no programa original dentro
+deste bloco, mesmo quando não necessário. Não alterará o return.
+
+Código mutado: if (true)
+
+23.2 Equivalente. O correto é que 1 seja adicionado neste comando do código, e não 0. Assim a mensagem impressa estará
+correta. Não alterará o return.
+
+Código mutado: System.out.println ("Casamento na posicao: " + (i - m + 0));
+
+23.3 Equivalente. É importante que m seja subtraído para que a mensagem impressa esteja certa, de acordo com o código original.
+Não alterará o return.
+
+Código mutado: System.out.println ("Casamento na posicao: " + (i + m + 1));
+
+23.4 Equivalente. É importante que 1 seja adicionado para que a mensagem impressa seja igual à do código original. Não alterará o return.
+
+Código mutado: System.out.println ("Casamento na posicao: " + (i - m - 1));
+
+23.7 (Dúvida)
+
+23.8 Equivalente. Removendo o println, não será impressa a mensagem como no código original. Não alterará o return.
+
+Código mutado: removido o println desta linha.
+
+28.1 Equivalente. O código funciona para qualquer valor de maxChar.
+
+Código mutado: int d[] = new int[257];
+
+29.3 Não equivalente. O código irá "pular" d[0] e ele não será inicializado com m.
+
+Código mutado: for (int j = 1; j < maxChar; j++) d[j] = m;
+
+30.3 Não equivalente. O for faŕa uma iteração a menos, pulando d[(int)P.charAt (0)].
+
+Código mutado: for (int j = 1; j < (m-1); j++) d[(int)P.charAt (j)] = m - j - 1;
+
+30.5 Não equivalente. Um valor diferente do colocado no código original será atribuido a d[(int)P.charAt (j)].
+
+Código mutado: for (int j = 1; j < (m-1); j++) d[(int)P.charAt (j)] = m - j - 0;
+
+30.7 Não equivalente. Um valor diferente do colocado no código original será atribuido a d[(int)P.charAt (j)].
+
+Código mutado: for (int j = 1; j < (m-1); j++) d[(int)P.charAt (j)] = m + j - 1;
+
+30.8 Não equivalente. Um valor diferente do colocado no código original será atribuido a d[(int)P.charAt (j)].
+
+Código mutado: for (int j = 1; j < (m-1); j++) d[(int)P.charAt (j)] = m - j + 1;
+
+34.5 Não equivalente. Negando a condicional, o código irá passar para o bloco quando não deveria para algumas entradas.
+
+Código mutado: while ((j >= 0) && (T.charAt (k) != P.charAt (j))) { j--; k--; }
+
+34.6 (Dúvida)
+
+34.8 Não equivalente. O programa nunca entrará no bloco while se uma das condicionais forem false.
+
+Código mutado:  while (false && (T.charAt (k) == P.charAt (j))) { j--; k--; }
+
+34.9 Não equivalente. A mudança pode alterar o funcionamento do código para algumas entradas, fazendo o programa continuar
+ou sair do while em momentos inoportunos.
+
+Código mutado:  while (true && (T.charAt (k) == P.charAt (j))) { j--; k--; }
+
+34.13 Não equivalente. O decremento faz parte do código original, não podendo ser removido.
+
+Código mutado:  while ((j >= 0) && (T.charAt (k) == P.charAt (j))) { j--;}
+
+35.1 Não equivalente. O código irá mostrar a mensagem também quando i for igual a 0.
+
+Código mutado: if (j <= 0)
+
+35.2 Equivalente. O código irá mostrar a mensagem quando i >= 0, oposto ao programa original. Não alterará o return.
+
+Código mutado: if (j >= 0)
+
+35.3 Equivalente. Com false na condicional, o código nunca irá exibir a mensagem, mesmo que 
+necessário. Não alterará o return.
+
+Código mutado: if (false)
+
+35.4 Equivalente. Com true na condicional, o código sempre irá exibir a mensagem, inclusive
+em momentos errados. Não alterará o return.
+
+Código mutado: if (true)
+
+36.2 Equivalente. O código irá monstrar o valor errado na mensagem. Não alterará o return.
+
+Código mutado: System.out.println ("Casamento na posicao: " + (k + 0));
+
+36.3 Equivalente. O código irá mostrar o valor errado na mensagem. Não alterará o return.
+
+Código mutado: System.out.println ("Casamento na posicao: " + (k - 1));
+
+36.6 (Dúvida)
+
+36.7 Equivalente. Com a remoção do println, o código não irá mais exibir a mensagem projetada no código
+original. Não alterará o return.
+
+Código mutado: removido o println desta linha.
+
+42.1 Equivalente. O código funciona para qualquer valor de maxChar.
+
+Código mutado: int d[] = new int[257];
+
+43.3 Não equivalente. d[0] será pulado pelo laço e inicializado com o valor errado.
+
+Código mutado: for (int j = 1; j < maxChar; j++) d[j] = m + 1;
+
+44.3 Não equivalente. d[(int)P.charAt (0)] será inicializado com o valor errado, pois o laço não irá acessá-lo.
+
+Còdigo mutado: for (int j = 1; j < m; j++) d[(int)P.charAt (j)] = m - j;
+
+44.4 Não equivalente. Substituir a subtração por uma adição fará com que d[(int)P.charAt (j)] seja inicializado com
+valores errados.
+
+Còdigo mutado: for (int j = 0; j < m; j++) d[(int)P.charAt (j)] = m + j;
+
+48.5 Não equivalente. A condicional do while não irá funcionar bem para todos os casos em relação ao programa
+original.
+
+Código mutado: while ((j >= 0) && (T.charAt (k) != P.charAt (j))) { j--; k--; }
+
+48.7 (Dúvida)
+
+48.8 Não equivalente. Colocando false no while fará com que o programa nunca entre neste bloco, mesmo que necessário.
+
+Código mutado: while (false && (T.charAt (k) == P.charAt (j))) { j--; k--; }
+
+48.9 Não equivalente. Colocando true na primeira condicional fará com que o programa continue no while em casos onde
+o certo seria sair.
+
+Código mutado: while (true && (T.charAt (k) == P.charAt (j))) { j--; k--; }
+
+48.13 Não equivalente. É necessário que a variável k seja decrementada em 1 para o funcionamenteo do código.
+
+Código mutado: while ((j >= 0) && (T.charAt (k) == P.charAt (j))) { j--; }
+
+49.1 Não equivalente. O programa também entrará neste bloco quando j for igual a 0.
+
+Código mutado: if (j <= 0)
+
+49.2 Não equivalente. Negando a condicional, o programa irá trabalhar de forma oposta a correta para este bloco.
+
+Código mutado: if (j >= 0)
+
+49.3 Não equivalente. Com false dentro da condicional, o método nunca irá imprimir a mensagem projetada, mesmo
+que necessário.
+
+Código mutado: if (false)
+
+49.4 Não equivalente. Com true dentro da condicional, o método sempre irá imprimir a mensagem projetada, mesmo 
+quando não deveria.
+
+Código mutado: if (true)
+
+50.2 Não equivalente. O valor errado será impresso pelo método.
+
+Código mutado: System.out.println ("Casamento na posicao: " + (k + 0));
+
+50.3 Não equivalente. O valor errado será impresso pelo método.
+
+Código mutado: System.out.println ("Casamento na posicao: " + (k - 1));
+
+50.6 (Dúvida)
+
+50.7 Não equivalente. Com a remoção do println, o programa não irá imprimir a mensagem projetada no código original.
+
+Código mutado: removido o println desta linha.
+
+
+
+
+
+
+
+
+

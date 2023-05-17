@@ -1,0 +1,17 @@
+5.3 Equivalente. Substituir 1 por 0 apenas irá fazer uma iteração a mais. Vale ressaltar
+que ela será desnecessária pois, como max e min recebem v[0] antes do for, max e min
+serão comparados com seus próprios valores.
+
+Código mutado:     for (int i = 0; i < n; i++) {
+
+6.1 Equivalente. Se > for trocado por >= max receberá os valores de v[i] que são iguais a ele
+ou maiores. Isso não vai alterar o resultado final do programa, pois mesmo assim será retornado
+o valor máximo.
+
+Código mutado: 
+
+7.2 Equivalente. Se < for trocado por <= min receberá os valroes de v[i] que são iguais a ele
+ou menores. Isso não vai alterar o resultado final do programa, pois mesmo assim será retornado
+o valor mínimo.
+
+Código mutado:

@@ -1,0 +1,9 @@
+11.2 Equivalente. Por default do java, a variável topo será inicializada com null, igual
+ao que ocorria antes da mutação.
+
+Código mutado: this.tam = 0;
+
+11.2 Equivalente. Por default do java, a variável tam será inicializada com 0, igual
+ao que ocorria antes da mutação.
+
+Código mutado: this.topo = null;

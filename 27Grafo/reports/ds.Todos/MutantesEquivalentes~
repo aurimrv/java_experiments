@@ -1,0 +1,124 @@
+32.1 Não equivalente. Item não será inicializado com os valores corretos.
+
+Código mutado: removida a chamada a new Celula.
+
+32.2 Não equivalente. Item não será inicializado com os valores corretos.
+
+Código mutado: Celula item = new Celula (v2, 1);
+
+33.1 (Dúvida)
+
+33.2 (Dúvida)
+
+33.3 (Dúvida)
+
+33.4 Não equivalente. Negar a condicional fará com que sejam retornados valores errados
+para as entradas, valores estes opostos aos corretos.
+
+Código mutado: return (this.adj[v1].pesquisa (item) == null);
+
+33.5 (Dúvida)
+
+33.6 Não equivalente. Para qualquer entrada, inclusive as erradas, será retornado false.
+
+Código mutado: return (false);
+
+33.7 Não equivalente. Para qualquer entrada, inclusive as erradas, será retornado true.
+
+Código mutado: return (true);
+
+33.8 (Dúvida)
+
+47.1 Não equivalente. item será inicializado com o valor padrão null, ao invés do valor correto.
+
+Código mutado: removida a chamada a this.adj[v].proximo();
+
+48.1 Não equivalente. Se for removida a chamada a new Aresta(), o código usará null sempre.
+
+Código mutado: removida a chamada a new Aresta().
+
+48.3 Não equivalente. Sempre será retornado null.
+
+Código mutado: return false ? new Aresta (v, item.vertice, item.peso) : null;
+
+51.1 Não equivalente. chave será inicializado com o padrão java null, ao invés do retorno de new Celula().
+
+Código mutado: removida a chamada a new Celula().
+
+51.2 Não equivalente. O segundo parâmetro do construtor receberá um valor errado.
+
+Código mutado: Celula chave = new Celula (v2, 1);
+
+52.1 (Dúvida)	
+
+52.2 Não equivalente. item será inicializado com o padrão java null, ao invés do retorno de this.adj[v1].retira (chave).
+
+Código mutado: removida a chamada a this.ajd[v1].retira (chave).
+
+53.1 Não equivalente. Se for removida a chamada a new Aresta(), o código usará null sempre.
+
+Código mutado: removida a chamada a new Aresta().
+
+53.2 Não equivalente. Se a condicional for negada, o código retornará o valor oposto ao correto para todas as entradas:
+
+Código mutado: return item == null ? new Aresta (v1, v2, item.peso) : null;
+
+53.3 Não equivalente. Se a condicional for substituida por false, sempre retornará null.
+
+Código mutado: return false ? new Aresta (v1, v2, item.peso) : null;
+
+53.4 Não equivalente. Se a condicional for substituida por true, sempre retornará a chamada a new Aresta().
+
+Código mutado: return true ? new Aresta (v1, v2, item.peso) : null;
+
+53.5 (Dúvida)
+
+56.3 Não equivalente. Será feita uma iteração a menos. O caso i = 0 será pulado.
+
+Código mutado: for (int i = 1; i < this.numVertices; i++) { 
+
+56.5 Não equivalente. Com false dentro da condicional, o número necessário de iterações não será feito.
+
+Código mutado: for (int i = 0; false; i++) { 
+
+57.5 (Dúvida)
+
+57.6 Não equivalente. O código não irá imprimir a mensagem projetada no programa original.
+
+Código mutado: removido o println desta linha.
+
+59.2 Não equivalente. O código nunca entrará no bloco while enquando houver false na condicioal.
+
+Código mutado: while (false) {
+
+60.7 (Dúvida)
+
+60.8 Não equivalente. Sem o println, o código não irá imprimir a mensagem projetada no programa original.
+
+Código mutado: removido o println desta linha.
+
+61.1 Não equivalente. item seŕa inicializado com null padrão java, ao invés do retorno de this.adj[i].proximo ()
+
+Código mutado: removida a chamada a this.adj[i].proximo ()
+
+69.2 (Dúvida)
+
+69.4 Não equivalente. Com true dentro da condicional o código considera que a lista nunca está vazia.
+
+Código mutado: if (true) {
+
+71.3 Não equivalente. Colocar true dentro do while fará com que o código nunca saia do bloco. Provalvemte
+irá retornar uma exceção.
+
+Código mutado: while (true) {
+
+72.2 (Dúvida)
+
+72.3 (Dúvida)
+
+73.1 Não equivalente. ajd será inicializada com null padrão java, ao invés do retorno de this.proxAjd(v).
+
+Código mutado: Removida a chamda a this.proxAdj(v)
+
+
+

@@ -1,0 +1,193 @@
+24.1 (Dúvida)
+
+24.4 Não equivalente. A primeira posição do array p[] será preenchida com o valor padrão
+dado pelo Java e não com um valor aleatório.
+
+Código mutado: for (int i = 1; i < n; i++) p[i] = rand.nextInt(M) + 1;
+
+24.5 Equivalente. O array p[] ainda será preenchido com valores aleatórios.
+
+Código mutado: for (int i = 0; i < n; i++) p[i] = rand.nextInt(M) + 0;
+
+24.6 Equvalente. O array p[] ainda será preenchido com valores aleatórios.
+
+Código mutado: for (int i = 0; i < n; i++) p[i] = rand.nextInt(M) - 1;
+
+24.7 Não equivalente. Com a condicional do laço negada, não serão feitas as
+iterações necessárias.
+
+Código mutado: for (int i = 0; i >= n; i++) p[i] = rand.nextInt(M) + 1;
+
+24.8 (Dúvida)
+
+24.9 Não equivalente. Com a condicional do laço estabelecida como false, não
+serão feitas as iterações necessárias.
+
+Código mutado: for (int i = 0; false; i++) p[i] = rand.nextInt(M) + 1;
+
+29.1 Não equivalente. A soma será inicializada com um valor incorreto.
+
+Código mutado: int soma = 1;
+
+30.3 Não equivalente. A substituição de 0 por 1 fará com que o primeiro valore de pesos[] seja
+ignorado.
+
+Código mutado: for (int i = 1; i < chave.length(); i++) 
+
+31.1 Não equivalente. Substituir a multiplicação por divisão irá fazer com que soma receba resultados
+errados.
+
+Código mutado: soma = soma + ((int)chave.charAt (i)) / pesos[i];
+
+31.3 Não equivalente. Remover a chamada de charAt fará com que a soma não seja atualizada.
+
+Código mutado: soma = soma
+
+32.2 (Dúvida)
+
+36.1 Equivalente. O código é feito para funcionar com qualquer valor de m.
+
+Código mutado: int m=8;
+
+39.3 Equivalente. A iteração do for não irá cobrir a primeira posição do array tabela[]. Apesar disso,
+tabela[0] será inicializada com o valor padrão null, como o código fazia antes da mutação.
+
+Código mutado: for (int i = 1; i < this.M; i++) this.tabela[i] = null; // @{\it vazio}@
+
+39.4 Equivalente. Apesar de não acontecerem as iterações quando a condicional estiver negada, tabela[]
+será preenchido com o valor padrão null.
+
+Código mutado: for (int i = 1; i >= this.M; i++) this.tabela[i] = null; // @{\it vazio}@
+
+39.5 Equivalente. Quando estiver false dentro do condicional, o for não fará as iterações necessárias. Porém,
+por padrão java, tabela[] será inicializada corretamente como null.
+
+Código mutado: for (int i = 1; false; i++) this.tabela[i] = null; // @{\it vazio}@
+
+45.1 Não equivalente. i é incrementado dentro do primeiro laço while. Inicializar seu valor com 1 fará com que
+ele "Pule" um incremento.
+
+Código mutado: int indice = inicial; int i = 1;
+
+47.1 (Dúvida)
+
+47.8 (Dúvida)
+
+50.4 Não equivalente. Fixar este trecho da condicional como true pode retornar o indice para entradas onde não
+era para acontecer.
+
+Código mutado: true) return indice;
+
+61.2 (Dúvida)
+
+61.4 Não equivalente. Se dentro da condicional houver true, ele sempre irá tentar inserir e nunca retornará
+a mensagem "Registro já está presente".
+
+Código mutado: if (true) {
+
+63.1 Não equivalente. Se i começar com 1, o programa irá "pular" um incremento da variável na atribuição à outra 
+váriavel indice.
+
+Código mutado: int indice = inicial; int i = 1;
+
+64 (Dúvida)
+
+67.1 Não equivalente. Se < for substituido por <=, o programa tenterá inserir um elemento na tabela já cheia quando
+i == this.M . Além disso, a mensagem "Tabela cheia" não será exibida para este caso.
+
+Código mutado: if (i <= this.M) this.tabela[indice] = new Celula (chave, item); 
+
+67.5 Não equivalente. Se dentro da condicional sempre houver true, o programa tentará colocar elementos na tabela
+já cheia e nunca exibirá a mensagem "Tabea cheia" para os casos convenientes.
+
+Código mutado: if (true) this.tabela[indice] = new Celula (chave, item);
+
+69.1 Equivalente. A mensagem que deveria ser exibida pelo programa foi removida nos mutante. Isso não altera o return do método.
+
+Código mutado: removido o println desta linha.
+
+75.1 (Dúvida)
+
+75.2 Não equivalente. Por default, java atribui false a variável booleanas. No caso do programa principal, é atribuido
+true à variável "retirado".
+
+Código mutado: this.tabela[i].chave = null;
+
+76.1 Equivalente. Com a remoção do println, a mensagem que deveria ser impressa pelo método não será exibida, mas o return
+do código permanece o mesmo.
+
+Código mutado: retirado o println desta linha.
+
+82.7 Não equivalente. A variável n será incrementada mais vezes do que deveria para algumas entradas.
+
+Código mutado: if (this.tabela[i] != null && !this.tabela[i].retirado) n++;
+
+84.3 Não equivalente. Substituir 0 por 1 fará com que um dos elementos de tabela[],item, o primeiro, seja
+ignorado na iteração.
+
+Código mutado: for (int i = 1; i < this.M; i++)
+
+84.4 Não equivalente. Negar a condicional fará com que o programa não faça o número de iterações necessárias.
+
+Código mutado: for (int i = 0; i >= this.M; i++)
+
+84.5 Não equivalente. Fixar a condicional da iteração com false fará o programa pular iterações necessárias.
+
+Código mutado: for (int i = 0; false; i++)
+
+85.3 Não equivalente. Colocar false dentro da condicional fará com que o código nunca atinja a linha 86, não
+importando a entrada.
+
+Código mutado:  if (false && !this.tabela[i].retirado) 
+
+85.4 Não equivalente. Colocar false dentro da condicional fará com que o código nunca atinja a linha 86, não
+importando a entrada.
+
+Código mutado: if (this.tabela[i] != null && false) 
+
+86.1 Não equivalente. Alterar o incremento de +1 para -1 irá causar uma exceção. Um espaço inexsitente do array
+tentará ser acessado.
+
+Código mutado: itens[n--] = this.tabela[i].item;   
+
+86.1 Não equivalente. Remover o incremento irá fazer o código funcionar de maneira errada pois somente uma posição
+de itens[] será preenchida.
+
+Código mutado: itens[n] = this.tabela[i].item;
+
+90.3 Equivalente. A primeira posição do array tabela[] não será acessada e a mensagem não será mostrada, mas o return
+será igual.
+
+Código mutado: for (int i = 1; i < this.M; i++) {
+
+90.4 Equivalente. O for não fará o número de iterações necessário para imprimir os elementos, mas o return do método não
+será alterado.
+
+Código mutado: for (int i = 0; i >= this.M; i++) {
+
+90.5 Não equivalente. O for não fará o número de iterações necessário para imprimir os elementos.
+
+Código mutado: for (int i = 0; false; i++) {
+
+91.2 Equivalente. Negar a condicional tentará imprimir valores null, mas não modificará o return do array.
+
+Código mutado:  if (this.tabela[i] == null && !this.tabela[i].retirado) {
+
+91.3 Equivalente. Com false nesta condicional, nada será impresso, independentemente da entrada, mas o return  do método será igual.
+
+Código mutado:  if (false && !this.tabela[i].retirado) {
+
+91.4 Equivalente. Com false nesta condicional, nada será impresso, independentemente da entrada, mas o return permanece o mesmo.
+
+Código mutado:  if (this.tabela[i] != null && false) {
+
+91.6 Não equivalente. Se a segunda condicional for fixada com true, o programa tentará imprimir algo que
+talvez tenha sido retirado da tabela. Gerará exceção.
+
+Código mutado:  if (this.tabela[i] != null && true) {
+
+92.6 (Dúvida)
+
+92.7 Não equivalente. Sem o comando println, o resultado não será impresso.
+
+Código mutado: retirado o println desta linha.

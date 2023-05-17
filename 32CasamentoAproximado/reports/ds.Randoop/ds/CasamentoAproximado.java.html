@@ -1,0 +1,861 @@
+<html>
+<head>
+<style type='text/css'>
+html, body, div, span, p, blockquote, pre {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body{
+	line-height: 1;
+	color: black;
+	background: white;
+	margin-left: 20px;
+}
+
+.src { 
+	border: 1px solid #dddddd;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-family: Consolas, Courier, monospace;
+}
+
+
+.covered {background-color: #ddffdd}
+.uncovered {background-color: #ffdddd}
+.killed {background-color: #aaffaa}
+.survived {background-color: #ffaaaa}
+.uncertain {background-color: #dde7ef}
+.run_error {background-color: #dde7ef}
+.na {background-color: #eeeeee}
+.timed_out {background-color: #dde7ef}
+.non_viable {background-color: #aaffaa}
+.memory_error {background-color: #dde7ef}
+.not_started {background-color: #dde7ef; color : red}
+.no_coverage {background-color: #ffaaaa}
+
+
+.pop {outline:none; }
+.pop strong {line-height:30px;}
+.pop {text-decoration:none;}
+.pop span { z-index:10;display:none; padding:14px 20px; margin-top:-30px; margin-left:28px; width:800px; line-height:16px; word-wrap:break-word; }
+.pop:hover span{ display:inline; position:absolute; color:#111; border:1px solid #DCA; background:#fffAF0;}
+
+.pop span { border-radius:4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; -moz-box-shadow: 5px 5px 8px #CCC; -webkit-box-shadow: 5px 5px 8px #CCC; box-shadow: 5px 5px 8px #CCC; }
+</style>
+
+</head>
+<body>
+
+
+<h1>CasamentoAproximado.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_1'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package ds;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_2'></a>
+<span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>public class CasamentoAproximado {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_3'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private static final int maxChar = 256;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_4'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public static void shiftAndAproximado (String T,int n,String P,int m, int k) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_5'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // @{\it Pr\&#39;e-processamento do padr\~ao}@</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_6'/>
+6
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_6'>2</a>
+<span>
+1. shiftAndAproximado : Substituted 1 with 0 &rarr; KILLED<br/>
+2. shiftAndAproximado : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    int R[] = new int[k+1];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_7'/>
+7
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_7'>1</a>
+<span>
+1. shiftAndAproximado : Substituted 256 with 257 &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    int M[] = new int[maxChar];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_8'/>
+8
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_8'>9</a>
+<span>
+1. shiftAndAproximado : Substituted 0 with 1 &rarr; SURVIVED<br/>
+2. shiftAndAproximado : Substituted 0 with 1 &rarr; SURVIVED<br/>
+3. shiftAndAproximado : negated conditional &rarr; SURVIVED<br/>
+4. shiftAndAproximado : removed conditional - replaced comparison check with false &rarr; SURVIVED<br/>
+5. shiftAndAproximado : Removed increment 1 &rarr; TIMED_OUT<br/>
+6. shiftAndAproximado : changed conditional boundary &rarr; KILLED<br/>
+7. shiftAndAproximado : Changed increment from 1 to -1 &rarr; KILLED<br/>
+8. shiftAndAproximado : Substituted 256 with 257 &rarr; KILLED<br/>
+9. shiftAndAproximado : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    for (int i = 0; i &#60; maxChar; i++) M[i] = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_9'/>
+9
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_9'>7</a>
+<span>
+1. shiftAndAproximado : Removed increment 1 &rarr; TIMED_OUT<br/>
+2. shiftAndAproximado : changed conditional boundary &rarr; KILLED<br/>
+3. shiftAndAproximado : Changed increment from 1 to -1 &rarr; KILLED<br/>
+4. shiftAndAproximado : Substituted 0 with 1 &rarr; KILLED<br/>
+5. shiftAndAproximado : negated conditional &rarr; KILLED<br/>
+6. shiftAndAproximado : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+7. shiftAndAproximado : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>    for (int j = 0; j &#60; m; j++) </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_10'/>
+10
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_10'>8</a>
+<span>
+1. shiftAndAproximado : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. shiftAndAproximado : Substituted 1 with 0 &rarr; SURVIVED<br/>
+3. shiftAndAproximado : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+4. shiftAndAproximado : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+5. shiftAndAproximado : Replaced Shift Left with Shift Right &rarr; SURVIVED<br/>
+6. shiftAndAproximado : Replaced bitwise OR with AND &rarr; SURVIVED<br/>
+7. shiftAndAproximado : removed call to java/lang/String::charAt &rarr; SURVIVED<br/>
+8. shiftAndAproximado : removed call to java/lang/String::charAt &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      M[(int)P.charAt (j)] = M[(int)P.charAt (j)] | (1 &#60;&#60; (m-j-1));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_11'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // @{\it Pesquisa}@</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_12'/>
+12
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_12'>6</a>
+<span>
+1. shiftAndAproximado : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. shiftAndAproximado : Substituted 1 with 0 &rarr; SURVIVED<br/>
+3. shiftAndAproximado : Substituted 0 with 1 &rarr; SURVIVED<br/>
+4. shiftAndAproximado : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+5. shiftAndAproximado : Replaced Shift Left with Shift Right &rarr; SURVIVED<br/>
+6. shiftAndAproximado : Substituted 0 with 1 &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    int Ri =  1 &#60;&#60; (m-1); R[0] = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_13'/>
+13
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_13'>13</a>
+<span>
+1. shiftAndAproximado : changed conditional boundary &rarr; SURVIVED<br/>
+2. shiftAndAproximado : Substituted 1 with 0 &rarr; SURVIVED<br/>
+3. shiftAndAproximado : Substituted 1 with 0 &rarr; SURVIVED<br/>
+4. shiftAndAproximado : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+5. shiftAndAproximado : Replaced Shift Left with Shift Right &rarr; SURVIVED<br/>
+6. shiftAndAproximado : Replaced bitwise OR with AND &rarr; SURVIVED<br/>
+7. shiftAndAproximado : removed conditional - replaced comparison check with false &rarr; SURVIVED<br/>
+8. shiftAndAproximado : Removed increment 1 &rarr; TIMED_OUT<br/>
+9. shiftAndAproximado : Changed increment from 1 to -1 &rarr; KILLED<br/>
+10. shiftAndAproximado : Substituted 1 with 0 &rarr; KILLED<br/>
+11. shiftAndAproximado : Replaced integer subtraction with addition &rarr; KILLED<br/>
+12. shiftAndAproximado : negated conditional &rarr; KILLED<br/>
+13. shiftAndAproximado : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    for (int j = 1; j &#60;= k; j++) R[j] = (1 &#60;&#60; (m-j)) | R[j-1];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_14'/>
+14
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_14'>7</a>
+<span>
+1. shiftAndAproximado : Removed increment 1 &rarr; TIMED_OUT<br/>
+2. shiftAndAproximado : changed conditional boundary &rarr; KILLED<br/>
+3. shiftAndAproximado : Changed increment from 1 to -1 &rarr; KILLED<br/>
+4. shiftAndAproximado : Substituted 0 with 1 &rarr; KILLED<br/>
+5. shiftAndAproximado : negated conditional &rarr; KILLED<br/>
+6. shiftAndAproximado : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+7. shiftAndAproximado : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>    for (int i = 0; i &#60; n; i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_15'/>
+15
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_15'>1</a>
+<span>
+1. shiftAndAproximado : Substituted 0 with 1 &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>      int Rant = R[0];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_16'/>
+16
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_16'>5</a>
+<span>
+1. shiftAndAproximado : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. shiftAndAproximado : Replaced Shift Right with Shift Left &rarr; SURVIVED<br/>
+3. shiftAndAproximado : Replaced bitwise OR with AND &rarr; SURVIVED<br/>
+4. shiftAndAproximado : Replaced bitwise AND with OR &rarr; SURVIVED<br/>
+5. shiftAndAproximado : removed call to java/lang/String::charAt &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      int RNovo = ((Rant &#62;&#62; 1) | Ri) &#38; M[(int)T.charAt (i)];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_17'/>
+17
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_17'>1</a>
+<span>
+1. shiftAndAproximado : Substituted 0 with 1 &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>      R[0] = RNovo;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_18'/>
+18
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_18'>7</a>
+<span>
+1. shiftAndAproximado : changed conditional boundary &rarr; SURVIVED<br/>
+2. shiftAndAproximado : Substituted 1 with 0 &rarr; SURVIVED<br/>
+3. shiftAndAproximado : removed conditional - replaced comparison check with false &rarr; SURVIVED<br/>
+4. shiftAndAproximado : Removed increment 1 &rarr; TIMED_OUT<br/>
+5. shiftAndAproximado : Changed increment from 1 to -1 &rarr; KILLED<br/>
+6. shiftAndAproximado : negated conditional &rarr; KILLED<br/>
+7. shiftAndAproximado : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      for (int j = 1; j &#60;= k; j++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_19'/>
+19
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_19'>9</a>
+<span>
+1. shiftAndAproximado : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. shiftAndAproximado : Substituted 1 with 0 &rarr; SURVIVED<br/>
+3. shiftAndAproximado : Replaced Shift Right with Shift Left &rarr; SURVIVED<br/>
+4. shiftAndAproximado : Replaced bitwise AND with OR &rarr; SURVIVED<br/>
+5. shiftAndAproximado : Replaced bitwise OR with AND &rarr; SURVIVED<br/>
+6. shiftAndAproximado : Replaced bitwise OR with AND &rarr; SURVIVED<br/>
+7. shiftAndAproximado : Replaced Shift Right with Shift Left &rarr; SURVIVED<br/>
+8. shiftAndAproximado : Replaced bitwise OR with AND &rarr; SURVIVED<br/>
+9. shiftAndAproximado : removed call to java/lang/String::charAt &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        RNovo = ((R[j] &#62;&#62; 1) &#38; M[(int)T.charAt (i)]) | Rant | </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_20'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                ((Rant | RNovo) &#62;&#62; 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_21'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        Rant = R[j];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_22'/>
+22
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_22'>1</a>
+<span>
+1. shiftAndAproximado : Replaced bitwise OR with AND &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        R[j] = RNovo | Ri;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_23'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>      }      </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_24'/>
+24
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_24'>5</a>
+<span>
+1. shiftAndAproximado : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. shiftAndAproximado : Replaced bitwise AND with OR &rarr; SURVIVED<br/>
+3. shiftAndAproximado : negated conditional &rarr; SURVIVED<br/>
+4. shiftAndAproximado : removed conditional - replaced equality check with false &rarr; SURVIVED<br/>
+5. shiftAndAproximado : removed conditional - replaced equality check with true &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      if ((RNovo &#38; 1) != 0) </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_25'/>
+25
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_25'>6</a>
+<span>
+1. shiftAndAproximado : removed call to java/lang/String::charAt &rarr; SURVIVED<br/>
+2. shiftAndAproximado : removed call to java/lang/StringBuilder::toString &rarr; SURVIVED<br/>
+3. shiftAndAproximado : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
+4. shiftAndAproximado : removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED<br/>
+5. shiftAndAproximado : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+6. shiftAndAproximado : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        System.out.println (&#34;Casamento na posicao: &#34; + T.charAt(i));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_26'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_27'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56e27c05_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_28'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_6'>6</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_6'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test080(ds.Randoop54)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test041(ds.Randoop54)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_7'>7</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_7'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 256 with 257 &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_8'>8</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_8'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test001(ds.Randoop54)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test001(ds.Randoop54)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test001(ds.Randoop54)</span></span> Substituted 256 with 257 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test001(ds.Randoop54)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Removed increment 1 &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test236(ds.Randoop54)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test081(ds.Randoop54)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test082(ds.Randoop54)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test002(ds.Randoop54)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test002(ds.Randoop54)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test080(ds.Randoop54)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Removed increment 1 &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_10'>10</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_10'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced Shift Left with Shift Right &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced bitwise OR with AND &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::charAt &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::charAt &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_12'>12</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_12'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test197(ds.Randoop54)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced Shift Left with Shift Right &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_13'>13</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_13'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test018(ds.Randoop54)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test018(ds.Randoop54)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced Shift Left with Shift Right &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test018(ds.Randoop54)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced bitwise OR with AND &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test197(ds.Randoop54)</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test018(ds.Randoop54)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Removed increment 1 &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_14'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test018(ds.Randoop54)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test056(ds.Randoop54)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test256(ds.Randoop54)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test018(ds.Randoop54)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test054(ds.Randoop54)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test018(ds.Randoop54)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Removed increment 1 &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_15'>15</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_15'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test197(ds.Randoop54)</span></span> Substituted 0 with 1 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_16'>16</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_16'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced Shift Right with Shift Left &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced bitwise OR with AND &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced bitwise AND with OR &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test252(ds.Randoop54)</span></span> removed call to java/lang/String::charAt &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_17'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test197(ds.Randoop54)</span></span> Substituted 0 with 1 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_18'>18</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_18'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test054(ds.Randoop54)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test197(ds.Randoop54)</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test054(ds.Randoop54)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Removed increment 1 &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_19'>19</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_19'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced Shift Right with Shift Left &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced bitwise AND with OR &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced bitwise OR with AND &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced bitwise OR with AND &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced Shift Right with Shift Left &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced bitwise OR with AND &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::charAt &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_22'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced bitwise OR with AND &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_24'>24</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_24'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> Replaced bitwise AND with OR &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with true &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56e27c05_25'>25</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56e27c05_25'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test068(ds.Randoop54)</span></span> removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test068(ds.Randoop54)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::charAt &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>ds.Randoop54.test068(ds.Randoop54)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::toString &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>shiftAndAproximado<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_3</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_89</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_2</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_88</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_1</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_0</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_85</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_84</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_87</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_86</li>
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_91</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_92</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_93</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_8</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_94</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_9</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_6</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_7</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_4</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_90</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_5</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_99</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_98</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_97</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_96</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_95</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_12</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_11</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_14</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_13</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_10</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_19</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_16</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_15</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_18</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_17</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_63</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_62</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_65</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_64</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_67</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_66</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_69</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_68</li>
+<li class='mutator'>EXPERIMENTAL_SWITCH_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_MEMBER_VARIABLE_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_70</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_71</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_72</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_76</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_75</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_74</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_73</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_79</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_78</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_77</li>
+<li class='mutator'>INLINE_CONSTANT_MUTATOR</li>
+<li class='mutator'>RETURN_VALS_MUTATOR</li>
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_ELSE_MUTATOR</li>
+<li class='mutator'>CONSTRUCTOR_CALL_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_82</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_83</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_80</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_81</li>
+<li class='mutator'>ARGUMENT_PROPAGATION_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_48</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_49</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_44</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_45</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_46</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_47</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_40</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_41</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_42</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_43</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_50</li>
+<li class='mutator'>REMOVE_INCREMENTS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_59</li>
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_IF_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_57</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_58</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_55</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_56</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_53</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_54</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_51</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_52</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_61</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_60</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_26</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_27</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_28</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_29</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_20</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_21</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_22</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_23</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_24</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_25</li>
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_ELSE_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_39</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_37</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_38</li>
+<li class='mutator'>MATH_MUTATOR</li>
+<li class='mutator'>NON_VOID_METHOD_CALL_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_31</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_32</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_30</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_35</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_36</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_33</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_34</li>
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_IF_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>ds.Randoop53.test381(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test172(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test359(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test222(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test315(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test210(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test059(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test322(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test051(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test150(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test111(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test162(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test255(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test038(ds.Randoop53) (10 ms)</li><li>ds.Randoop53.test493(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test223(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test267(ds.Randoop53) (11 ms)</li><li>ds.Randoop54.test188(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test164(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test038(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test324(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test213(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test489(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test130(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test141(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test069(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test435(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test184(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test217(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test058(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test313(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test148(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test347(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test457(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test384(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test126(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test305(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test009(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test479(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test067(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test145(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test396(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test430(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test426(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test262(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test092(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test300(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test075(ds.Randoop54) (7 ms)</li><li>ds.Randoop53.test376(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test122(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test132(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test022(ds.Randoop53) (16 ms)</li><li>ds.Randoop53.test275(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test107(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test200(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test326(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test246(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test367(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test361(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test316(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test137(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test039(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test318(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test011(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test113(ds.Randoop53) (19 ms)</li><li>ds.Randoop53.test166(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test114(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test074(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test005(ds.Randoop53) (41 ms)</li><li>ds.Randoop53.test236(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test337(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test237(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test017(ds.Randoop53) (15 ms)</li><li>ds.Randoop53.test460(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test056(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test472(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test329(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test374(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test349(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test190(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test490(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test073(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test398(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test103(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test256(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test071(ds.Randoop54) (7 ms)</li><li>ds.Randoop53.test230(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test010(ds.Randoop53) (31 ms)</li><li>ds.Randoop54.test350(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test248(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test483(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test386(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test119(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test224(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test007(ds.Randoop53) (30 ms)</li><li>ds.Randoop53.test268(ds.Randoop53) (10 ms)</li><li>ds.Randoop54.test089(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test158(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test447(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test028(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test072(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test179(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test014(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test169(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test311(ds.Randoop54) (6 ms)</li><li>ds.Randoop54.test070(ds.Randoop54) (7 ms)</li><li>ds.Randoop54.test008(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test338(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test149(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test005(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test273(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test019(ds.Randoop53) (14 ms)</li><li>ds.Randoop53.test044(ds.Randoop53) (12 ms)</li><li>ds.Randoop53.test380(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test328(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test318(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test355(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test037(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test250(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test226(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test325(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test394(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test298(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test239(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test160(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test094(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test011(ds.Randoop53) (34 ms)</li><li>ds.Randoop53.test188(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test191(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test263(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test306(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test247(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test202(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test009(ds.Randoop53) (40 ms)</li><li>ds.Randoop54.test036(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test219(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test124(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test378(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test286(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test439(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test342(ds.Randoop54) (8 ms)</li><li>ds.Randoop53.test051(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test033(ds.Randoop53) (11 ms)</li><li>ds.Randoop54.test320(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test344(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test171(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test319(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test496(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test353(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test207(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test078(ds.Randoop53) (13 ms)</li><li>ds.Randoop54.test275(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test201(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test311(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test016(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test184(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test115(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test059(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test357(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test313(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test301(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test035(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test244(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test316(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test060(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test220(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test194(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test211(ds.Randoop54) (6 ms)</li><li>ds.Randoop54.test328(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test187(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test104(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test124(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test399(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test025(ds.Randoop53) (10 ms)</li><li>ds.Randoop54.test088(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test123(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test161(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test140(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test065(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test199(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test397(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test003(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test208(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test299(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test279(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test129(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test262(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test264(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test152(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test108(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test003(ds.Randoop53) (42 ms)</li><li>ds.Randoop54.test290(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test058(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test099(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test010(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test225(ds.Randoop54) (6 ms)</li><li>ds.Randoop54.test116(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test148(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test032(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test261(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test332(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test466(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test236(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test012(ds.Randoop53) (30 ms)</li><li>ds.Randoop54.test215(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test438(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test454(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test042(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test359(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test092(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test101(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test127(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test351(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test445(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test154(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test103(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test269(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test238(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test260(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test467(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test345(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test375(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test026(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test168(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test453(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test055(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test232(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test348(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test128(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test137(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test235(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test031(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test084(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test194(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test372(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test082(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test261(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test433(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test355(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test271(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test285(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test061(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test258(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test349(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test354(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test161(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test492(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test288(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test182(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test034(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test049(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test057(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test243(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test315(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test212(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test108(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test192(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test326(ds.Randoop53) (10 ms)</li><li>ds.Randoop54.test209(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test176(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test238(ds.Randoop54) (8 ms)</li><li>ds.Randoop54.test321(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test458(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test098(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test471(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test487(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test417(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test015(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test164(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test150(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test279(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test191(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test416(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test206(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test468(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test158(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test131(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test086(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test441(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test274(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test076(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test223(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test156(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test091(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test419(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test029(ds.Randoop53) (12 ms)</li><li>ds.Randoop53.test193(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test293(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test196(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test341(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test154(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test214(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test351(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test073(ds.Randoop54) (7 ms)</li><li>ds.Randoop53.test450(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test452(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test215(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test130(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test305(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test052(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test292(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test354(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test177(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test352(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test245(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test371(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test488(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test256(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test286(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test008(ds.Randoop53) (38 ms)</li><li>ds.Randoop54.test263(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test075(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test307(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test162(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test299(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test179(ds.Randoop53) (11 ms)</li><li>ds.Randoop53.test146(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test360(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test090(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test234(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test382(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test280(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test081(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test099(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test205(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test198(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test395(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test278(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test160(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test387(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test241(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test145(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test251(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test048(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test028(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test018(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test210(ds.Randoop54) (7 ms)</li><li>ds.Randoop54.test217(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test287(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test284(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test301(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test360(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test455(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test175(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test406(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test291(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test072(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test294(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test216(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test221(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test413(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test456(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test139(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test021(ds.Randoop53) (13 ms)</li><li>ds.Randoop53.test143(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test105(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test172(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test463(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test310(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test231(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test123(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test485(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test336(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test338(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test014(ds.Randoop53) (20 ms)</li><li>ds.Randoop53.test090(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test339(ds.Randoop54) (7 ms)</li><li>ds.Randoop54.test177(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test288(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test077(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test043(ds.Randoop53) (12 ms)</li><li>ds.Randoop53.test018(ds.Randoop53) (20 ms)</li><li>ds.Randoop53.test031(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test499(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test195(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test007(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test310(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test027(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test392(ds.Randoop53) (14 ms)</li><li>ds.Randoop54.test001(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test332(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test264(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test149(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test048(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test041(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test295(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test085(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test370(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test383(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test127(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test289(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test083(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test020(ds.Randoop53) (19 ms)</li><li>ds.Randoop53.test465(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test304(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test283(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test357(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test138(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test333(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test362(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test287(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test237(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test403(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test033(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test071(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test377(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test166(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test029(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test157(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test385(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test273(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test411(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test247(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test289(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test185(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test211(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test141(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test039(ds.Randoop53) (10 ms)</li><li>ds.Randoop53.test478(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test304(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test024(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test118(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test421(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test484(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test271(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test221(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test159(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test494(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test422(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test334(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test076(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test391(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test173(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test252(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test189(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test101(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test277(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test022(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test171(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test074(ds.Randoop54) (7 ms)</li><li>ds.Randoop53.test365(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test013(ds.Randoop53) (19 ms)</li><li>ds.Randoop54.test062(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test053(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test449(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test220(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test118(ds.Randoop53) (12 ms)</li><li>ds.Randoop54.test086(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test309(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test481(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test451(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test183(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test401(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test142(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test257(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test218(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test253(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test012(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test420(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test341(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test446(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test155(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test204(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test183(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test320(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test112(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test047(ds.Randoop54) (7 ms)</li><li>ds.Randoop54.test091(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test180(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test407(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test128(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test474(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test246(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test473(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test270(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test258(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test339(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test327(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test151(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test037(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test203(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test163(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test197(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test065(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test233(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test100(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test066(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test042(ds.Randoop53) (10 ms)</li><li>ds.Randoop53.test139(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test429(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test193(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test322(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test025(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test497(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test122(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test109(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test434(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test004(ds.Randoop53) (38 ms)</li><li>ds.Randoop53.test291(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test486(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test254(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test046(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test243(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test064(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test085(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test312(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test087(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test347(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test102(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test107(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test070(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test041(ds.Randoop53) (14 ms)</li><li>ds.Randoop53.test259(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test303(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test068(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test153(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test280(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test080(ds.Randoop53) (11 ms)</li><li>ds.Randoop54.test045(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test309(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test231(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test186(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test319(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test343(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test314(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test427(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test132(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test035(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test228(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test040(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test363(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test027(ds.Randoop53) (13 ms)</li><li>ds.Randoop53.test196(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test348(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test115(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test414(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test077(ds.Randoop53) (11 ms)</li><li>ds.Randoop53.test302(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test063(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test233(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test329(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test330(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test047(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test228(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test129(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test093(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test345(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test064(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test464(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test245(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test255(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test482(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test443(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test054(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test176(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test358(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test249(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test126(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test043(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test226(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test323(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test314(ds.Randoop54) (6 ms)</li><li>ds.Randoop54.test147(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test013(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test431(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test096(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test019(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test133(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test117(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test049(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test216(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test440(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test081(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test235(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test272(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test034(ds.Randoop53) (12 ms)</li><li>ds.Randoop53.test050(ds.Randoop53) (11 ms)</li><li>ds.Randoop53.test336(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test459(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test136(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test206(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test277(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test110(ds.Randoop54) (7 ms)</li><li>ds.Randoop53.test015(ds.Randoop53) (21 ms)</li><li>ds.Randoop54.test253(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test198(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test186(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test134(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test060(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test110(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test498(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test111(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test393(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test195(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test142(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test225(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test174(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test239(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test342(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test100(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test135(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test442(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test296(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test475(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test346(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test030(ds.Randoop53) (11 ms)</li><li>ds.Randoop54.test069(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test036(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test125(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test436(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test105(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test248(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test063(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test044(ds.Randoop54) (10 ms)</li><li>ds.Randoop53.test388(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test167(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test346(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test312(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test180(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test199(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test185(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test026(ds.Randoop53) (10 ms)</li><li>ds.Randoop54.test140(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test428(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test284(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test276(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test470(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test373(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test088(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test062(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test170(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test405(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test079(ds.Randoop53) (11 ms)</li><li>ds.Randoop54.test259(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test331(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test491(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test234(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test462(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test159(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test136(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test094(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test102(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test297(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test151(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test330(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test281(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test232(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test241(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test182(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test283(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test252(ds.Randoop53) (14 ms)</li><li>ds.Randoop53.test147(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test178(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test230(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test292(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test250(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test135(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test278(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test006(ds.Randoop53) (37 ms)</li><li>ds.Randoop53.test344(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test165(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test082(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test448(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test353(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test477(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test227(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test112(ds.Randoop54) (7 ms)</li><li>ds.Randoop54.test050(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test350(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test002(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test024(ds.Randoop53) (17 ms)</li><li>ds.Randoop54.test079(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test242(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test057(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test298(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test214(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test317(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test495(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test178(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test303(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test133(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test390(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test379(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test097(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test340(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test418(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test240(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test095(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test300(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test202(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test389(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test229(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test324(ds.Randoop54) (7 ms)</li><li>ds.Randoop53.test087(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test200(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test104(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test297(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test402(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test125(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test174(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test170(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test335(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test046(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test030(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test209(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test006(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test242(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test117(ds.Randoop53) (10 ms)</li><li>ds.Randoop53.test432(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test337(ds.Randoop54) (6 ms)</li><li>ds.Randoop54.test282(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test119(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test093(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test325(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test227(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test023(ds.Randoop53) (10 ms)</li><li>ds.Randoop54.test269(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test138(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test461(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test412(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test409(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test331(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test317(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test021(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test080(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test067(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test444(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test143(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test268(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test156(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test340(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test096(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test321(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test165(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test002(ds.Randoop53) (52 ms)</li><li>ds.Randoop53.test218(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test032(ds.Randoop53) (12 ms)</li><li>ds.Randoop53.test181(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test369(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test476(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test068(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test265(ds.Randoop53) (11 ms)</li><li>ds.Randoop53.test131(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test437(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test343(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test152(ds.Randoop53) (10 ms)</li><li>ds.Randoop53.test424(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test089(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test272(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test306(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test425(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test189(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test327(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test040(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test285(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test249(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test192(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test267(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test084(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test120(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test257(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test053(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test308(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test020(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test197(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test045(ds.Randoop53) (10 ms)</li><li>ds.Randoop53.test116(ds.Randoop53) (11 ms)</li><li>ds.Randoop53.test144(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test410(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test016(ds.Randoop53) (21 ms)</li><li>ds.Randoop54.test061(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test168(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test205(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test083(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test368(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test144(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test296(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test207(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test106(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test352(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test222(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test203(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test356(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test208(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test293(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test054(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test078(ds.Randoop54) (7 ms)</li><li>ds.Randoop53.test173(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test334(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test120(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test004(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test423(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test097(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test106(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test281(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test098(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test224(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test290(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test302(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test201(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test121(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test333(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test480(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test500(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test323(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test187(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test095(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test052(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test295(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test274(ds.Randoop53) (9 ms)</li><li>ds.Randoop54.test356(ds.Randoop54) (5 ms)</li><li>ds.Randoop54.test055(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test244(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test155(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test294(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test276(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test361(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test415(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test167(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test358(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test109(ds.Randoop54) (7 ms)</li><li>ds.Randoop54.test270(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test308(ds.Randoop53) (8 ms)</li><li>ds.Randoop54.test265(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test251(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test229(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test213(ds.Randoop54) (6 ms)</li><li>ds.Randoop53.test212(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test219(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test175(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test469(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test254(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test408(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test366(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test400(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test335(ds.Randoop53) (8 ms)</li><li>ds.Randoop53.test121(ds.Randoop53) (9 ms)</li><li>ds.Randoop53.test169(ds.Randoop53) (5 ms)</li><li>ds.Randoop53.test001(ds.Randoop53) (170 ms)</li><li>ds.Randoop53.test282(ds.Randoop53) (6 ms)</li><li>ds.Randoop53.test364(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test146(ds.Randoop54) (3 ms)</li><li>ds.Randoop53.test260(ds.Randoop53) (7 ms)</li><li>ds.Randoop54.test023(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test266(ds.Randoop54) (4 ms)</li><li>ds.Randoop54.test066(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test157(ds.Randoop53) (5 ms)</li><li>ds.Randoop54.test114(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test204(ds.Randoop53) (7 ms)</li><li>ds.Randoop53.test056(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test181(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test017(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test134(ds.Randoop54) (4 ms)</li><li>ds.Randoop53.test404(ds.Randoop53) (6 ms)</li><li>ds.Randoop54.test190(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test163(ds.Randoop54) (3 ms)</li><li>ds.Randoop54.test113(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test153(ds.Randoop53) (12 ms)</li><li>ds.Randoop53.test266(ds.Randoop53) (10 ms)</li><li>ds.Randoop54.test307(ds.Randoop54) (5 ms)</li><li>ds.Randoop53.test240(ds.Randoop53) (8 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.1.10
+
+</body>
+</html>

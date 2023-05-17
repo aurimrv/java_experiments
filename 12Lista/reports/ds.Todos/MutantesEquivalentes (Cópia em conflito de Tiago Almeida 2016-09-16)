@@ -1,0 +1,30 @@
+8.3 Equivalente. A variável pos não aparece novamente no código.
+
+Código mutado: this.primeiro = new Celula ();
+
+9.2 Equivalente. A inicialização padrão do Java atribui null para a variável de objeto não
+inicializada manualmente, igual ao que havia no código antes da mutação.
+
+Código mutado: this.ultimo = this.primeiro;
+
+13.2 Equivalente. Assim como em 9.2, a variável é inicializada como null por padrão, igual
+ao que havia no código anteriormente à mutação.
+
+Codigo mutado: this.ultimo.item = x;
+
+18.2 Equivalente. Como há false dentro do while, nada será mostrado na tela. Como o teste não
+vê o print, mas sim o return dá função, que nesse caso será o mesmo do original, o resultado
+continuam correto.
+
+Código mutado: while (false) {
+
+19.1 Equivalente. Como visto em 18.2, não importa para o teste o que será mostrado na tela. Logo,
+remover o toString() resultará em diferença apenas para quem lê o resultado do programa, mas não
+para o teste, já que o return continua sendo igual.
+
+Código mutado: System.out.println (aux.item); aux = aux.prox;
+
+19.2 Equivalente. Como visto em 18.2 e 19.2, o que será impresso na tela não afeta os testes,
+logo, remover o println não irá alterar o resultado final da função para a análise de mutantes.
+
+Código mutado: aux = aux.prox;
