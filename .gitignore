@@ -28,3 +28,5 @@ replay_pid*
 .project
 .classpath
 target/
+.project.xml
+.project*.xml
