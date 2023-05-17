@@ -1,5 +1,0 @@
-4.1 Equivalente. O terceiro espaço do array nunca é utilizado no código.
-
-Código mutado: int maxMin[] = new int[3];
-
-

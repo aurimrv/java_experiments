@@ -1,9 +1,0 @@
-Nr. NCSS CCN JVDC Function
-  1    4   1    0 ds.Tabela.Tabela()
-  2    6   2    0 ds.Tabela.pesquisa(Item)
-  3    4   3    0 ds.Tabela.insere(Item)
-  4   14   8    0 ds.Tabela.binaria(Item)
-Average Function NCSS:       7.00
-Average Function CCN:        3.50
-Average Function JVDC:       0.00
-Program NCSS:               32.00

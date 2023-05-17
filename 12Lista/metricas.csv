@@ -1,9 +1,0 @@
-Nr. NCSS CCN JVDC Function
-  1    5   1    0 ds.Lista.Lista()
-  2    5   1    0 ds.Lista.insere(Object)
-  3    2   1    0 ds.Lista.vazia()
-  4    5   2    0 ds.Lista.imprime()
-Average Function NCSS:       4.25
-Average Function CCN:        1.25
-Average Function JVDC:       0.00
-Program NCSS:               23.00

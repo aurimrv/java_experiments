@@ -1,8 +1,0 @@
-8.2 Equivalente. Por padrão, a variável seria inicializada com 0. portanto a alteração não faz diferença.
-
-Código mutado: this.ultimo = this.primeiro;
-
-8.3 Equivalente. Como, por padrão, a variável seria inicializada com 0 e como 0 é o valor atribuido a
-this.primeiro, não haverá nenhuma alteração no resultado.
-
-Código mutado: this.primeiro = 0;

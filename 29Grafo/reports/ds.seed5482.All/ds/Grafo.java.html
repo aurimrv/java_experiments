@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Grafo.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_1'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package ds;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_2'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_3'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class Grafo {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_4'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public static class Aresta {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_5'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private int v1, v2, peso;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_6'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Aresta (int v1, int v2, int peso) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_7'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>      this.v1 = v1; this.v2 = v2; this.peso = peso;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_8'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_9'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int peso () { return this.peso; }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_10'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int v1 () { return this.v1; }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_11'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int v2 () { return this.v2; }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_12'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }  </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_13'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private static class Celula {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_14'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    int vertice, peso;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_15'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Celula (int v, int p) {this.vertice = v; this.peso = p;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_16'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean equals (Object obj) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_17'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>      Celula item = (Celula) obj;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_18'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>      return (this.vertice == item.vertice);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_19'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_20'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }  </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_21'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private Lista adj[]; </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_22'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  private int numVertices;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_23'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  public Grafo (int numVertices) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_24'/>
+24
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_24'>2</a>
+<span>
+1. <init> : Removed assignment to member variable adj &rarr; KILLED<br/>
+2. <init> : Removed assignment to member variable numVertices &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    this.adj = new Lista[numVertices]; this.numVertices = numVertices; </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_25'/>
+25
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_25'>7</a>
+<span>
+1. <init> : changed conditional boundary &rarr; KILLED<br/>
+2. <init> : removed call to ds/Lista::&#60;init&#62; &rarr; KILLED<br/>
+3. <init> : Changed increment from 1 to -1 &rarr; KILLED<br/>
+4. <init> : Substituted 0 with 1 &rarr; KILLED<br/>
+5. <init> : negated conditional &rarr; KILLED<br/>
+6. <init> : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+7. <init> : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    for (int i = 0; i &#60; this.numVertices; i++) this.adj[i] = new Lista();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_26'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }  //@\lstcontinue@</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_27'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public void insereAresta (int v1, int v2, int peso) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_28'/>
+28
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_28'>1</a>
+<span>
+1. insereAresta : removed call to ds/Grafo$Celula::&#60;init&#62; &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    Celula item = new Celula (v2, peso); </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_29'/>
+29
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_29'>1</a>
+<span>
+1. insereAresta : removed call to ds/Lista::insere &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    this.adj[v1].insere (item); </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_30'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }  </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_31'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public boolean existeAresta (int v1, int v2) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_32'/>
+32
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_32'>2</a>
+<span>
+1. existeAresta : Substituted 0 with 1 &rarr; SURVIVED<br/>
+2. existeAresta : removed call to ds/Grafo$Celula::&#60;init&#62; &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    Celula item = new Celula (v2, 0);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_33'/>
+33
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_33'>10</a>
+<span>
+1. existeAresta : replaced call to ds/Lista::pesquisa with argument &rarr; KILLED<br/>
+2. existeAresta : replaced boolean return with false for ds/Grafo::existeAresta &rarr; KILLED<br/>
+3. existeAresta : replaced boolean return with true for ds/Grafo::existeAresta &rarr; KILLED<br/>
+4. existeAresta : Substituted 1 with 0 &rarr; KILLED<br/>
+5. existeAresta : Substituted 0 with 1 &rarr; KILLED<br/>
+6. existeAresta : negated conditional &rarr; KILLED<br/>
+7. existeAresta : removed call to ds/Lista::pesquisa &rarr; KILLED<br/>
+8. existeAresta : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+9. existeAresta : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+10. existeAresta : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    return (this.adj[v1].pesquisa (item) != null);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_34'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_35'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public boolean listaAdjVazia (int v) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_36'/>
+36
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_36'>4</a>
+<span>
+1. listaAdjVazia : replaced boolean return with false for ds/Grafo::listaAdjVazia &rarr; KILLED<br/>
+2. listaAdjVazia : replaced boolean return with true for ds/Grafo::listaAdjVazia &rarr; KILLED<br/>
+3. listaAdjVazia : removed call to ds/Lista::vazia &rarr; KILLED<br/>
+4. listaAdjVazia : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    return this.adj[v].vazia ();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_37'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_38'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public Aresta primeiroListaAdj (int v) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_39'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // @{\it Retorna a primeira aresta que o v\&#39;ertice v participa ou}@</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_40'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // @{\it {\bf NULL} se a lista de adjac\^encia de v for vazia}@ </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_41'/>
+41
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_41'>1</a>
+<span>
+1. primeiroListaAdj : removed call to ds/Lista::primeiro &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    Celula item = (Celula) this.adj[v].primeiro ();    </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_42'/>
+42
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_42'>6</a>
+<span>
+1. primeiroListaAdj : removed call to ds/Grafo$Aresta::&#60;init&#62; &rarr; KILLED<br/>
+2. primeiroListaAdj : negated conditional &rarr; KILLED<br/>
+3. primeiroListaAdj : replaced return value with null for ds/Grafo::primeiroListaAdj &rarr; KILLED<br/>
+4. primeiroListaAdj : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+5. primeiroListaAdj : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+6. primeiroListaAdj : mutated return of Object value for ds/Grafo::primeiroListaAdj to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    return item != null ? new Aresta (v, item.vertice, item.peso) : null;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_43'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_44'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public Aresta proxAdj (int v) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_45'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // @{\it Retorna a pr\&#39;oxima aresta que o v\&#39;ertice v participa ou}@</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_46'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // @{\it {\bf null} se a lista de adjac\^encia de v estiver no fim}@</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_47'/>
+47
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_47'>1</a>
+<span>
+1. proxAdj : removed call to ds/Lista::proximo &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    Celula item = (Celula) this.adj[v].proximo ();    </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_48'/>
+48
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_48'>6</a>
+<span>
+1. proxAdj : removed call to ds/Grafo$Aresta::&#60;init&#62; &rarr; KILLED<br/>
+2. proxAdj : negated conditional &rarr; KILLED<br/>
+3. proxAdj : replaced return value with null for ds/Grafo::proxAdj &rarr; KILLED<br/>
+4. proxAdj : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+5. proxAdj : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+6. proxAdj : mutated return of Object value for ds/Grafo::proxAdj to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    return item != null ? new Aresta (v, item.vertice, item.peso) : null;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_49'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_50'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public Aresta retiraAresta (int v1, int v2) throws Exception {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_51'/>
+51
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_51'>2</a>
+<span>
+1. retiraAresta : Substituted 0 with 1 &rarr; SURVIVED<br/>
+2. retiraAresta : removed call to ds/Grafo$Celula::&#60;init&#62; &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    Celula chave = new Celula (v2, 0);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_52'/>
+52
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_52'>2</a>
+<span>
+1. retiraAresta : replaced call to ds/Lista::retira with argument &rarr; KILLED<br/>
+2. retiraAresta : removed call to ds/Lista::retira &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    Celula item = (Celula) this.adj[v1].retira (chave);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_53'/>
+53
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_53'>6</a>
+<span>
+1. retiraAresta : removed call to ds/Grafo$Aresta::&#60;init&#62; &rarr; KILLED<br/>
+2. retiraAresta : negated conditional &rarr; KILLED<br/>
+3. retiraAresta : replaced return value with null for ds/Grafo::retiraAresta &rarr; KILLED<br/>
+4. retiraAresta : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+5. retiraAresta : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+6. retiraAresta : mutated return of Object value for ds/Grafo::retiraAresta to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    return item != null ? new Aresta (v1, v2, item.peso) : null;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_54'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_55'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public void imprime () {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_56'/>
+56
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_56'>6</a>
+<span>
+1. imprime : Substituted 0 with 1 &rarr; SURVIVED<br/>
+2. imprime : removed conditional - replaced comparison check with false &rarr; SURVIVED<br/>
+3. imprime : changed conditional boundary &rarr; KILLED<br/>
+4. imprime : Changed increment from 1 to -1 &rarr; KILLED<br/>
+5. imprime : negated conditional &rarr; KILLED<br/>
+6. imprime : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    for (int i = 0; i &#60; this.numVertices; i++) { </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_57'/>
+57
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_57'>9</a>
+<span>
+1. imprime : removed call to java/lang/StringBuilder::toString &rarr; SURVIVED<br/>
+2. imprime : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
+3. imprime : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+4. imprime : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+5. imprime : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+6. imprime : removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED<br/>
+7. imprime : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+8. imprime : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+9. imprime : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      System.out.println (&#34;Vertice &#34; + i + &#34;:&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_58'/>
+58
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_58'>1</a>
+<span>
+1. imprime : removed call to ds/Lista::primeiro &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      Celula item = (Celula) this.adj[i].primeiro ();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_59'/>
+59
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_59'>3</a>
+<span>
+1. imprime : removed conditional - replaced equality check with false &rarr; SURVIVED<br/>
+2. imprime : negated conditional &rarr; KILLED<br/>
+3. imprime : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>      while (item != null) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_60'/>
+60
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_60'>13</a>
+<span>
+1. imprime : removed call to java/lang/StringBuilder::toString &rarr; SURVIVED<br/>
+2. imprime : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
+3. imprime : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+4. imprime : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+5. imprime : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+6. imprime : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+7. imprime : replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED<br/>
+8. imprime : removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED<br/>
+9. imprime : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+10. imprime : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+11. imprime : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+12. imprime : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+13. imprime : removed call to java/lang/StringBuilder::append &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        System.out.println (&#34;  &#34; + item.vertice + &#34; (&#34; +item.peso+ &#34;)&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_61'/>
+61
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_61'>1</a>
+<span>
+1. imprime : removed call to ds/Lista::proximo &rarr; SURVIVED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        item = (Celula) this.adj[i].proximo ();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_62'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>      }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_63'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_64'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>  }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_65'/>
+65
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_65'>2</a>
+<span>
+1. numVertices : replaced int return with 0 for ds/Grafo::numVertices &rarr; KILLED<br/>
+2. numVertices : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>  public int numVertices () { return this.numVertices; }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_66'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  public Grafo grafoTransposto () {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_67'/>
+67
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_67'>1</a>
+<span>
+1. grafoTransposto : removed call to ds/Grafo::&#60;init&#62; &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    Grafo grafoT = new Grafo (this.numVertices); </span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_68'/>
+68
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_68'>6</a>
+<span>
+1. grafoTransposto : changed conditional boundary &rarr; KILLED<br/>
+2. grafoTransposto : Changed increment from 1 to -1 &rarr; KILLED<br/>
+3. grafoTransposto : Substituted 0 with 1 &rarr; KILLED<br/>
+4. grafoTransposto : negated conditional &rarr; KILLED<br/>
+5. grafoTransposto : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+6. grafoTransposto : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    for (int v = 0; v &#60; this.numVertices; v++)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_69'/>
+69
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_69'>4</a>
+<span>
+1. grafoTransposto : negated conditional &rarr; KILLED<br/>
+2. grafoTransposto : removed call to ds/Grafo::listaAdjVazia &rarr; KILLED<br/>
+3. grafoTransposto : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+4. grafoTransposto : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>      if (!this.listaAdjVazia (v)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_70'/>
+70
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_70'>1</a>
+<span>
+1. grafoTransposto : removed call to ds/Grafo::primeiroListaAdj &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        Aresta adj = this.primeiroListaAdj (v);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_71'/>
+71
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_71'>3</a>
+<span>
+1. grafoTransposto : negated conditional &rarr; KILLED<br/>
+2. grafoTransposto : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+3. grafoTransposto : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        while (adj != null) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_72'/>
+72
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_72'>4</a>
+<span>
+1. grafoTransposto : removed call to ds/Grafo$Aresta::v1 &rarr; SURVIVED<br/>
+2. grafoTransposto : removed call to ds/Grafo$Aresta::peso &rarr; SURVIVED<br/>
+3. grafoTransposto : removed call to ds/Grafo$Aresta::v2 &rarr; KILLED<br/>
+4. grafoTransposto : removed call to ds/Grafo::insereAresta &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>          grafoT.insereAresta (adj.v2 (), adj.v1 (), adj.peso ());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_73'/>
+73
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_73'>1</a>
+<span>
+1. grafoTransposto : removed call to ds/Grafo::proxAdj &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>          adj = this.proxAdj (v);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_74'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_75'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>      }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_76'/>
+76
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_76'>2</a>
+<span>
+1. grafoTransposto : replaced return value with null for ds/Grafo::grafoTransposto &rarr; KILLED<br/>
+2. grafoTransposto : mutated return of Object value for ds/Grafo::grafoTransposto to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>    return grafoT;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_77'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>  } </span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_78'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_24'>24</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_24'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b><init><br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> Removed assignment to member variable adj &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b><init><br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> Removed assignment to member variable numVertices &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_25'>25</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_25'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b><init><br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b><init><br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> removed call to ds/Lista::&#60;init&#62; &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b><init><br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b><init><br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase10(ds.seed5482.JTExpert)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b><init><br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b><init><br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b><init><br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_28'>28</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_28'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>insereAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase10(ds.seed5482.JTExpert)</span></span> removed call to ds/Grafo$Celula::&#60;init&#62; &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_29'>29</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_29'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>insereAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase10(ds.seed5482.JTExpert)</span></span> removed call to ds/Lista::insere &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_32'>32</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_32'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>ds.seed5482.Evo.ds.seed5482.Evo</span></span> removed call to ds/Grafo$Celula::&#60;init&#62; &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_33'>33</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_33'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase6(ds.seed5482.JTExpert)</span></span> replaced call to ds/Lista::pesquisa with argument &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>ds.seed5482.Evo.ds.seed5482.Evo</span></span> replaced boolean return with false for ds/Grafo::existeAresta &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase6(ds.seed5482.JTExpert)</span></span> replaced boolean return with true for ds/Grafo::existeAresta &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>ds.seed5482.Evo.ds.seed5482.Evo</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase6(ds.seed5482.JTExpert)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase6(ds.seed5482.JTExpert)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>ds.seed5482.Evo.ds.seed5482.Evo</span></span> removed call to ds/Lista::pesquisa &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>ds.seed5482.Evo.ds.seed5482.Evo</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase6(ds.seed5482.JTExpert)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>existeAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase6(ds.seed5482.JTExpert)</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_36'>36</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_36'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>listaAdjVazia<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> replaced boolean return with false for ds/Grafo::listaAdjVazia &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>listaAdjVazia<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> replaced boolean return with true for ds/Grafo::listaAdjVazia &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>listaAdjVazia<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> removed call to ds/Lista::vazia &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>listaAdjVazia<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_41'>41</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_41'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>primeiroListaAdj<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> removed call to ds/Lista::primeiro &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_42'>42</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_42'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>primeiroListaAdj<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> removed call to ds/Grafo$Aresta::&#60;init&#62; &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>primeiroListaAdj<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>primeiroListaAdj<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> replaced return value with null for ds/Grafo::primeiroListaAdj &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>primeiroListaAdj<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>primeiroListaAdj<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>primeiroListaAdj<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert)</span></span> mutated return of Object value for ds/Grafo::primeiroListaAdj to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_47'>47</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_47'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>proxAdj<br/><b>Killed by : </b>ds.seed5482.Randoop1.test875(ds.seed5482.Randoop1)</span></span> removed call to ds/Lista::proximo &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_48'>48</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_48'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>proxAdj<br/><b>Killed by : </b>ds.seed5482.Randoop1.test875(ds.seed5482.Randoop1)</span></span> removed call to ds/Grafo$Aresta::&#60;init&#62; &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>proxAdj<br/><b>Killed by : </b>ds.seed5482.Randoop0.test349(ds.seed5482.Randoop0)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>proxAdj<br/><b>Killed by : </b>ds.seed5482.Randoop1.test875(ds.seed5482.Randoop1)</span></span> replaced return value with null for ds/Grafo::proxAdj &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>proxAdj<br/><b>Killed by : </b>ds.seed5482.Randoop1.test875(ds.seed5482.Randoop1)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>proxAdj<br/><b>Killed by : </b>ds.seed5482.Randoop0.test349(ds.seed5482.Randoop0)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>proxAdj<br/><b>Killed by : </b>ds.seed5482.Randoop0.test349(ds.seed5482.Randoop0)</span></span> mutated return of Object value for ds/Grafo::proxAdj to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_51'>51</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_51'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>retiraAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase10(ds.seed5482.JTExpert)</span></span> removed call to ds/Grafo$Celula::&#60;init&#62; &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>retiraAresta<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_52'>52</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_52'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>retiraAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase10(ds.seed5482.JTExpert)</span></span> replaced call to ds/Lista::retira with argument &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>retiraAresta<br/><b>Killed by : </b>ds.seed5482.Randoop0.test304(ds.seed5482.Randoop0)</span></span> removed call to ds/Lista::retira &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_53'>53</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_53'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>retiraAresta<br/><b>Killed by : </b>ds.seed5482.Evo.ds.seed5482.Evo</span></span> removed call to ds/Grafo$Aresta::&#60;init&#62; &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>retiraAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase10(ds.seed5482.JTExpert)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>retiraAresta<br/><b>Killed by : </b>ds.seed5482.Evo.ds.seed5482.Evo</span></span> replaced return value with null for ds/Grafo::retiraAresta &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>retiraAresta<br/><b>Killed by : </b>ds.seed5482.Evo.ds.seed5482.Evo</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>retiraAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase10(ds.seed5482.JTExpert)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>retiraAresta<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase10(ds.seed5482.JTExpert)</span></span> mutated return of Object value for ds/Grafo::retiraAresta to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_56'>56</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_56'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop1.test806(ds.seed5482.Randoop1)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test125(ds.seed5482.Randoop0)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop1.test806(ds.seed5482.Randoop1)</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> removed conditional - replaced comparison check with false &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop1.test806(ds.seed5482.Randoop1)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_57'>57</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_57'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test125(ds.seed5482.Randoop0)</span></span> removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test125(ds.seed5482.Randoop0)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test125(ds.seed5482.Randoop0)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test125(ds.seed5482.Randoop0)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::toString &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_58'>58</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_58'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> removed call to ds/Lista::primeiro &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_59'>59</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_59'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test125(ds.seed5482.Randoop0)</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> removed conditional - replaced equality check with false &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test125(ds.seed5482.Randoop0)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_60'>60</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_60'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test205(ds.seed5482.Randoop0)</span></span> removed call to java/lang/StringBuilder::&#60;init&#62; &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test205(ds.seed5482.Randoop0)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test205(ds.seed5482.Randoop0)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test205(ds.seed5482.Randoop0)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test205(ds.seed5482.Randoop0)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>ds.seed5482.Randoop0.test205(ds.seed5482.Randoop0)</span></span> removed call to java/lang/StringBuilder::append &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> removed call to java/lang/StringBuilder::toString &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/StringBuilder::append with receiver &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_61'>61</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_61'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>imprime<br/><b>Killed by : </b>none</span></span> removed call to ds/Lista::proximo &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_65'>65</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_65'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>numVertices<br/><b>Killed by : </b>ds.seed5482.Randoop0.test214(ds.seed5482.Randoop0)</span></span> replaced int return with 0 for ds/Grafo::numVertices &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>numVertices<br/><b>Killed by : </b>ds.seed5482.Randoop0.test214(ds.seed5482.Randoop0)</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_67'>67</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_67'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.Randoop0.test257(ds.seed5482.Randoop0)</span></span> removed call to ds/Grafo::&#60;init&#62; &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_68'>68</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_68'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.Randoop0.test257(ds.seed5482.Randoop0)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase11(ds.seed5482.JTExpert)</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.Randoop0.test257(ds.seed5482.Randoop0)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.Randoop0.test257(ds.seed5482.Randoop0)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_69'>69</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_69'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.Randoop1.test590(ds.seed5482.Randoop1)</span></span> removed call to ds/Grafo::listaAdjVazia &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.Randoop1.test590(ds.seed5482.Randoop1)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_70'>70</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_70'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> removed call to ds/Grafo::primeiroListaAdj &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_71'>71</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_71'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.Randoop0.test406(ds.seed5482.Randoop0)</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_72'>72</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_72'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> removed call to ds/Grafo$Aresta::v2 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>none</span></span> removed call to ds/Grafo$Aresta::v1 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>none</span></span> removed call to ds/Grafo$Aresta::peso &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert)</span></span> removed call to ds/Grafo::insereAresta &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_73'>73</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_73'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.Evo.ds.seed5482.Evo</span></span> removed call to ds/Grafo::proxAdj &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1ec35dd2_76'>76</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1ec35dd2_76'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.Randoop0.test257(ds.seed5482.Randoop0)</span></span> replaced return value with null for ds/Grafo::grafoTransposto &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>grafoTransposto<br/><b>Killed by : </b>ds.seed5482.Randoop0.test257(ds.seed5482.Randoop0)</span></span> mutated return of Object value for ds/Grafo::grafoTransposto to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>RETURN_VALS_MUTATOR</li>
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_61</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_60</li>
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_56</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_55</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_58</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_57</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_52</li>
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_51</li>
+<li class='mutator'>NULL_RETURN_VALUES</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_54</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_53</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_59</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_50</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_45</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_44</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_47</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_46</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_41</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_40</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_43</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_42</li>
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_49</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_48</li>
+<li class='mutator'>INLINE_CONSTANT_MUTATOR</li>
+<li class='mutator'>CONSTRUCTOR_CALL_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_34</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_33</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_36</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_35</li>
+<li class='mutator'>EXPERIMENTAL_MEMBER_VARIABLE_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_30</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_32</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_31</li>
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_ELSE_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_38</li>
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_37</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_39</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_3</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_2</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_1</li>
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_0</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_23</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_22</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_25</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_9</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_24</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_8</li>
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_7</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_6</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_21</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_5</li>
+<li class='mutator'>NAKED_RECEIVER</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_20</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_4</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_27</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_26</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_29</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_28</li>
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+<li class='mutator'>REMOVE_INCREMENTS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_12</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_11</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_99</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_14</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_13</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_96</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_95</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_10</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_98</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_97</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_19</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_16</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_15</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_18</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_17</li>
+<li class='mutator'>EXPERIMENTAL_SWITCH_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_92</li>
+<li class='mutator'>ARGUMENT_PROPAGATION_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_91</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_94</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_93</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_90</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_89</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_88</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_85</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_84</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_87</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_86</li>
+<li class='mutator'>MATH_MUTATOR</li>
+<li class='mutator'>NON_VOID_METHOD_CALL_MUTATOR</li>
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_IF_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_81</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_80</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_83</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_82</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_78</li>
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_ELSE_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_77</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_79</li>
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_74</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_73</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_76</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_75</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_70</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_72</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_71</li>
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_IF_MUTATOR</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_67</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_66</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_69</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_68</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_63</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_62</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_65</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_64</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>ds.seed5482.Randoop0.test334(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test189(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test391(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test724(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test005(ds.seed5482.Randoop0) (7 ms)</li><li>ds.seed5482.Randoop0.test413(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.JTExpert.TestCase5(ds.seed5482.JTExpert) (2 ms)</li><li>ds.seed5482.Randoop0.test268(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test531(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test860(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test347(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test711(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test242(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test163(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test579(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test321(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test987(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test400(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test176(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test658(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test097(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test496(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test233(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test882(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test557(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test825(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test106(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop1.test899(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test084(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test154(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test312(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test746(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test873(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test018(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test667(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test978(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test448(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test422(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test075(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test343(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test715(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test636(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test952(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test509(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test395(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test132(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test720(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test338(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test654(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test983(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test264(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test404(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test474(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test733(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.JTExpert.TestCase1(ds.seed5482.JTExpert) (13 ms)</li><li>ds.seed5482.Randoop0.test053(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test461(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test926(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test211(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test812(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test325(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test382(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test049(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test693(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test939(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test259(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test641(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test930(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test207(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test128(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test908(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test435(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test088(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop1.test680(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test829(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test150(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test246(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test697(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test167(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test768(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop1.test505(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test198(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test014(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop1.test544(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test181(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test277(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test623(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test260(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test702(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test356(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test605(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test215(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test478(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test409(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test399(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test934(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test596(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test149(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test180(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test137(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test058(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test317(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test440(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test228(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test776(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test855(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test452(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test789(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test057(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop1.test935(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test698(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test514(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test969(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test706(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test282(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test114(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test035(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test627(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test456(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test619(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop0.test329(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test859(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test216(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test707(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test754(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test479(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test675(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test517(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test224(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test303(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test628(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test833(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test549(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test773(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test342(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test785(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test864(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test510(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test694(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.JTExpert.TestCase0(ds.seed5482.JTExpert) (16 ms)</li><li>ds.seed5482.Randoop0.test263(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test938(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test588(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test852(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test066(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test172(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test251(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test931(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test421(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test330(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test966(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test982(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test093(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test444(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test089(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop0.test184(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test405(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test891(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test522(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test290(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test970(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test247(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test031(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test023(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test561(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test373(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test365(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test640(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test110(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test895(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test624(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test553(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test887(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test286(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test102(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test671(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test396(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test703(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test663(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test133(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test483(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test491(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test584(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test742(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test054(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test070(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test750(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test220(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test900(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test212(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test475(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test140(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test646(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test793(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test061(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test359(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test256(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test951(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test322(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test107(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test098(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop0.test390(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test401(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test177(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test543(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test802(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test085(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test780(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test804(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test438(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test493(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test962(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test725(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test164(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test828(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test896(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test019(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test179(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test874(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test977(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test076(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test953(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test565(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test258(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test471(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test155(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test644(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test692(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test723(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test817(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test241(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test337(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test028(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test208(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test771(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test738(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test232(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test905(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test881(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test984(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test335(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test414(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test392(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test289(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test589(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test153(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test929(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test368(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test265(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test795(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test447(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test747(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test311(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test960(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test429(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test670(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test116(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test914(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test835(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test819(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test486(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test786(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test591(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test287(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test521(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test550(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test600(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test234(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test534(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test037(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test250(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test171(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test366(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test710(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test615(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test528(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Evo.ds.seed5482.Evo (586 ms)</li><li>ds.seed5482.Randoop0.test030(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test006(ds.seed5482.Randoop0) (7 ms)</li><li>ds.seed5482.Randoop1.test536(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test101(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.JTExpert.TestCase10(ds.seed5482.JTExpert) (2 ms)</li><li>ds.seed5482.Randoop1.test631(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test552(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test022(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test193(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test124(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test922(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test021(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test045(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test741(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test629(ds.seed5482.Randoop1) (5 ms)</li><li>ds.seed5482.Randoop0.test305(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test100(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test203(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test778(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test708(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test662(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test296(ds.seed5482.Randoop0) (12 ms)</li><li>ds.seed5482.Randoop0.test319(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test123(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test685(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test044(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test606(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test764(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop1.test843(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test527(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test477(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test740(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test328(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test866(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test431(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test858(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test763(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop1.test676(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test779(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test304(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test842(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test406(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test677(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test281(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test139(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test068(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test598(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test147(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test890(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test921(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test327(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test913(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test091(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop0.test194(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test454(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test992(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop0.test462(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test249(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test272(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test059(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test146(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test945(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test067(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test351(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test597(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test787(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test280(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test430(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test937(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test407(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test288(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test383(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test716(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test637(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test367(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test551(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test013(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop0.test446(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test558(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test968(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test614(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test036(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test889(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test115(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test210(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test590(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test485(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test504(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop1.test512(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test520(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.JTExpert.TestCase11(ds.seed5482.JTExpert) (2 ms)</li><li>ds.seed5482.Randoop1.test701(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test630(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.JTExpert.TestCase2(ds.seed5482.JTExpert) (2 ms)</li><li>ds.seed5482.Randoop0.test086(ds.seed5482.Randoop0) (11 ms)</li><li>ds.seed5482.Randoop0.test494(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test437(ds.seed5482.Randoop0) (13 ms)</li><li>ds.seed5482.Randoop1.test621(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test700(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test884(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test555(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test963(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test634(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test165(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test748(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test152(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test827(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test568(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test231(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test713(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test345(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test919(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test073(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test279(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test358(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test950(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test792(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test060(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test108(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test029(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test187(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test336(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test393(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test130(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test533(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test796(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test051(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test266(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test003(ds.seed5482.Randoop0) (7 ms)</li><li>ds.seed5482.Randoop1.test564(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test240(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test099(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test257(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test643(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test739(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test209(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test818(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test161(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test967(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test559(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test169(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test625(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test433(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test840(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test218(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test761(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test341(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test810(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test849(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test546(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test262(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test275(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test717(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test012(ds.seed5482.Randoop0) (7 ms)</li><li>ds.seed5482.Randoop1.test638(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test196(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test126(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test134(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test191(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop1.test656(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test397(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test981(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test419(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test205(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test183(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test924(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test468(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test845(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test213(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test476(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.JTExpert.TestCase3(ds.seed5482.JTExpert) (1 ms)</li><li>ds.seed5482.Randoop1.test503(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test814(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test560(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test323(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test774(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test244(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test735(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test047(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test402(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test490(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test577(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test441(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test090(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop0.test239(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test753(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test674(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test844(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test362(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test946(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test046(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test832(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test687(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test069(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test923(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test283(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test595(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test306(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test318(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test990(ds.seed5482.Randoop1) (5 ms)</li><li>ds.seed5482.Randoop0.test148(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test270(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test809(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test195(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test274(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test463(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test525(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test201(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test011(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop1.test994(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop1.test652(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test043(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test385(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test731(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test581(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test122(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test911(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test604(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test867(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test297(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test384(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test200(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test730(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test042(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test376(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test113(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test651(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test121(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test841(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test769(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test082(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test506(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test498(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test038(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test880(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test612(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test915(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test129(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test875(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test954(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test353(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test156(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test381(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test678(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test460(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test848(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test077(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test757(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop0.test278(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test813(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test199(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test007(ds.seed5482.Randoop0) (7 ms)</li><li>ds.seed5482.Randoop0.test015(ds.seed5482.Randoop0) (16 ms)</li><li>ds.seed5482.Randoop1.test805(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test989(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop0.test459(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test357(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test726(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test647(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test718(ds.seed5482.Randoop1) (14 ms)</li><li>ds.seed5482.Randoop1.test639(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test109(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test436(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test125(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test388(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test608(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test117(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test428(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test958(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test576(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test879(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test616(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test349(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test655(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test537(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test467(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test017(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test425(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test530(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test815(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test482(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test736(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test839(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test885(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test918(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test333(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test230(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test188(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test988(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test620(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop0.test254(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.JTExpert.TestCase4(ds.seed5482.JTExpert) (2 ms)</li><li>ds.seed5482.Randoop1.test633(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test480(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test346(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test072(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test267(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test712(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test151(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test714(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test611(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test541(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test556(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test026(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test800(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop0.test105(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.JTExpert.TestCase6(ds.seed5482.JTExpert) (1 ms)</li><li>ds.seed5482.Randoop1.test532(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test050(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test078(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test971(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test223(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test144(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test892(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test094(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test379(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test302(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test458(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test160(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test309(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test679(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test901(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test008(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop1.test609(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test081(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test523(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test024(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test497(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test758(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop0.test291(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test903(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test784(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test065(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test587(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test729(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test955(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test427(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test672(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test878(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test949(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test585(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test837(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test372(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test300(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test159(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test593(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test743(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test063(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test830(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop1.test822(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test142(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test096(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop0.test307(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test806(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test285(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test236(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test782(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test315(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test269(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test364(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test410(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test799(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test348(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test861(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test957(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test039(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test569(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test331(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test648(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test284(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test033(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test910(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test617(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test650(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test112(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test570(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test489(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test501(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test673(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test214(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test135(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test594(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test465(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test111(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test618(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test032(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test831(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test516(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test602(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test010(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop1.test524(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test603(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test807(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test025(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop0.test120(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test979(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test206(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test104(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop1.test798(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test649(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test041(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test197(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test721(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test877(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test665(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test705(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test127(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test394(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test418(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test143(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test339(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test744(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test299(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test473(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test457(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test222(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test902(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test681(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test301(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test009(ds.seed5482.Randoop0) (6 ms)</li><li>ds.seed5482.Randoop0.test340(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test775(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test759(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test253(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop1.test783(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test324(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test064(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test056(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test948(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test791(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test941(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test190(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test870(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test578(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test048(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test980(ds.seed5482.Randoop1) (4 ms)</li><li>ds.seed5482.Randoop0.test442(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test119(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test095(ds.seed5482.Randoop0) (5 ms)</li><li>ds.seed5482.Randoop0.test079(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test182(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop1.test909(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test174(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test925(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop1.test933(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test964(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop1.test893(ds.seed5482.Randoop1) (2 ms)</li><li>ds.seed5482.Randoop0.test363(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test158(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop1.test838(ds.seed5482.Randoop1) (3 ms)</li><li>ds.seed5482.Randoop0.test166(ds.seed5482.Randoop0) (4 ms)</li><li>ds.seed5482.Randoop0.test371(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test316(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test308(ds.seed5482.Randoop0) (2 ms)</li><li>ds.seed5482.Randoop0.test450(ds.seed5482.Randoop0) (3 ms)</li><li>ds.seed5482.Randoop0.test087(ds.seed5482.Randoop0) (5 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.3.2
+
+</body>
+</html>

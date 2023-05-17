@@ -1,9 +1,0 @@
-Nr. NCSS CCN JVDC Function
-  1    9   5    0 ds.CasamentoExato.forcaBruta(String,int,String,int)
-  2   11   5    0 ds.CasamentoExato.shiftAndExato(String,int,String,int)
-  3   16   7    0 ds.CasamentoExato.bmh(String,int,String,int)
-  4   16   8    0 ds.CasamentoExato.bmhs(String,int,String,int)
-Average Function NCSS:      13.00
-Average Function CCN:        6.25
-Average Function JVDC:       0.00
-Program NCSS:               55.00

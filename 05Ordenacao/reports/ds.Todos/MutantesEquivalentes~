@@ -1,5 +1,0 @@
-6.3 Equivalente. Se 1 for substituido por 0, na primeira iteração teremos que v[j] = v[i] = v[min], por
-min recebeu i no começo do código. Esse caso nunca vai passar na condicionou if (v[j] < v[min), pois sempre
-terão valores iguais. Assim, o resultado do código não se altera.
-
-Código mutado: for (int j = i + 0; j < n; j++)
