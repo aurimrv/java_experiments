@@ -26,6 +26,5 @@ replay_pid*
 .settings/
 .project
 .classpath
-target/
 .project.xml
 .project*.xml
